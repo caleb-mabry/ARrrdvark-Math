@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'vanillaregular';
-         url('Vanilla-webfont.woff') format('woff'),
+    src: url('Vanilla-webfont.woff');
     font-weight: normal;
     font-style: normal;
 
