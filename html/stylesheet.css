@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'vanillaregular';
+         url('Vanilla-webfont.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+
+}
+.navbar.about{
+	background:url("brunch.png");
+}
+h1, h2 {
+    font-family: 'vanillaregular';
+}
