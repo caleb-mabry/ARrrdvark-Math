@@ -6,5 +6,7 @@
 	background:url("brunch.png");
 }
 h1, h2 {
-    font-family: vanillaregular;
+    font-family: 'vanillaregular';
+	font-weight:normal;
+	font-style:normal;
 }
