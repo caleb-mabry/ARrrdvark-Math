@@ -8,19 +8,30 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <style type="text/css">
         @font-face {
         font-family: vanillaregular;
         src: url(Vanilla-webfont.woff);
-        }
 
-        h1, a{
+	}
+        h1, a, .center{
           font-family:vanillaregular;
         }
+
+	@font-face {
+        font-family: 'Arvo', serif;
+        src: url(Arvo-Regular.ttf);
+        }
+
+        p{               
+        font-family: 'Arvo', serif;
+        }
+
 </style>
 
   <title>ARrrdvark Math</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="index.html">ARrrdvark</a>
@@ -55,11 +66,15 @@
 </nav>
 <body style="background-image: url(brunch.png);background-size: cover;">
 
-  <div class="container-fluid no-padding" style="background-image: url(A.png); background-size:cover;">
-    <img src="A.png" class="img-fluid rounded" style="background-size: cover;">
+  <div id= class="container-fluid no-padding header">
+    <div class="center" font-color:#b7d5d4;>ARrrdvark<br><h1>Math</h1></div>
+
+	 <img src="A.png" alt="trees" width="100%">
+
   </div>
   <div class="container">
     <div class="row">
+
       <div class="col-4">
         col 1
       </div>
