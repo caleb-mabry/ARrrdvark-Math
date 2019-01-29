@@ -18,3 +18,51 @@ text-align: center;
 color: white;
 font-size: 50px;
 }
+.navbar-nav > li{;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.center{
+ position: absolute;
+ top:30%;
+ left: 30%;
+ z-index:1;
+ font-size: 50px;
+ color: #B3B3B4;
+}
+
+.header{
+position: relative;
+text-align: center;
+color: white;
+font-size: 50px;
+}
+
+body{
+	margin: 0;
+	font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas{
+	top: 0;
+	left: 0;
+	display: absolute;
+	vertical-align: bottom;
+}
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #151231;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 0%;
+	z-index: -1;
+}
+.login-form {
+	position:relative;
+}
+label {
+	color: #eee;
+}
