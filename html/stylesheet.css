@@ -1,28 +1,10 @@
-.navbar-nav > li{;
+/* navbar item spacing */
+.navbar-nav > li{
   padding-left:10px;
   padding-right:10px;
 }
 
-.center{
- position: absolute;
- top:30%;
- left: 30%;
- z-index:1;
- font-size: 50px;
- color: #B3B3B4;
-}
-
-.header{
-position: relative;
-text-align: center;
-color: white;
-font-size: 50px;
-}
-.navbar-nav > li{;
-  padding-left:10px;
-  padding-right:10px;
-}
-
+/* centering text on the home(index.html) page */
 .center{
  position: absolute;
  top:30%;
@@ -39,16 +21,21 @@ color: white;
 font-size: 50px;
 }
 
+
+/* Refering to the body in the sign up(signup.html) page */
 body{
 	margin: 0;
-	font: normal 75% Arial, Helvetica, sans-serif;
 }
+
+/* blue background in sign up(signup.html) page */
 canvas{
 	top: 0;
 	left: 0;
 	display: absolute;
 	vertical-align: bottom;
 }
+
+/* moving particles in the Sign Up (singup.html) page */
 #particles-js {
 	position: absolute;
 	width: 100%;
@@ -60,9 +47,13 @@ canvas{
 	background-position: 0% 0%;
 	z-index: -1;
 }
-.login-form {
-	position:relative;
-}
+
+/* this is the white writing in the Sign Up(signup.html) page. */
 label {
 	color: #eee;
+}
+
+/* Standardizing the font size for the brand name in the navbar */
+.navbar-brand{
+	font-size: 25px;
 }
