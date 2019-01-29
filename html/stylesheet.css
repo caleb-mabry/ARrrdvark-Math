@@ -23,21 +23,29 @@
 /* centering the word "ARrrdvark" on the home(index.html) page */
 .center{
  position: absolute;
- top:30%;
- left: 30%;
+ top:20%;
+ left: 20%;
  z-index:1;
- font-size: 50px;
+ font-size: 110px;
  color: #B3B3B4;
 }
 
 /* centering the word "Math" on the home(index.html) page */
 .center2{
  position: absolute;
- top:40%;
+ top:80%;
  left:30%;
  z-index:1;
  color: #B3B3B4
- font-size:40px;
+ font-size:200px;
+}
+.center3{
+ position: absolute;
+ top:40%;
+ left:50%;
+ z-index:1;
+ color: #B3B3B4
+ font-size:200px;
 }
 
 /* container <div> for the ARRdvark Math written on the banner in indext.html */
