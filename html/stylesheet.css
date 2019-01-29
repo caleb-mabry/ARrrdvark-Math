@@ -30,6 +30,7 @@
  color: #B3B3B4;
  letter-spacing: 6px; 
  font-weight: bold;
+ font-family: 'Waiting for the Sunrise', cursive;
 }
 
 /* centering the word "Math" on the home(index.html) page */
@@ -38,7 +39,7 @@
  top:80%;
  left:30%;
  z-index:1;
- color: #B3B3B4
+ color: #eee;
  font-size:200px;
 }
 
@@ -73,7 +74,7 @@ canvas{
 	left: 0;
 	display: absolute;
 	vertical-align: bottom;
-	z-index: 0;
+	z-index: -1;
 }
 
 /* moving particles in the Sign Up (singup.html) page */
@@ -86,7 +87,7 @@ canvas{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 0%;
-	z-index: -1;
+	z-index: 0;
 }
 
 /* this is the white writing in the Sign Up(signup.html) page. */
@@ -115,10 +116,3 @@ label {
 	margin-left: center;
 }
 
-.movingtext{
-	font-family: 'eraserregular';
-	font-size:30px; 
-  	margin: 10px 50px; 
-  	letter-spacing: 6px; 
-  	font-weight: bold;
-}
