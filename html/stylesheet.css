@@ -28,6 +28,8 @@
  z-index:1;
  font-size: 110px;
  color: #B3B3B4;
+ letter-spacing: 6px; 
+ font-weight: bold;
 }
 
 /* centering the word "Math" on the home(index.html) page */
@@ -95,4 +97,28 @@ label {
 /* The active tab in the navbar changes color */
 .active{
 	background-color: #C85749;
+}
+
+/* text about the container in signup.html */
+.text-center{
+	font-size: 35px;
+	font-family: vanillaregular;
+	color: #eee;
+	margin-top: auto;
+	margin-left: 20%;
+}
+
+/* Sign up button in signup.html */
+.text-center-button{
+	font-family: vanillaregular;
+	color: #eee;
+	margin-left: center;
+}
+
+.movingtext{
+	font-family: 'eraserregular';
+	font-size:30px; 
+  	margin: 10px 50px; 
+  	letter-spacing: 6px; 
+  	font-weight: bold;
 }
