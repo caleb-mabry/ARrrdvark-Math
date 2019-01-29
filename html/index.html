@@ -14,7 +14,7 @@
         src: url(Vanilla-webfont.woff);
 
 	}
-        h1, a, .center{
+        h1, a{
           font-family:vanillaregular;
         }
 
@@ -26,7 +26,15 @@
         p{               
         font-family: 'Arvo', serif;
         }
+	
+	@font-face{
+	font-family: 'eraserregular';
+	src: url(EraserRegular-webfont.woff)
+	}
 
+	.center, .center2{
+	font-family: 'eraserregular';
+	}
 </style>
 
   <title>ARrrdvark Math</title>
@@ -71,7 +79,7 @@
 <body style="background-image: url(brunch.png);background-size: cover;">
 
   <div id= class="container-fluid no-padding header">
-    <div class="center" font-color:#b7d5d4;>ARrrdvark<br><h1>Math</h1></div>
+    <div class="center">ARrrdvark<h1 class="center2">Math</h1></div>
 
 	 <img src="chalkboardBackground.png" alt="trees" height="500px" width="100%" >
 
