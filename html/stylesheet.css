@@ -39,6 +39,8 @@
  color: #B3B3B4
  font-size:200px;
 }
+
+/* image of the aardvark */
 .center3{
  position: absolute;
  top:40%;
@@ -69,6 +71,7 @@ canvas{
 	left: 0;
 	display: absolute;
 	vertical-align: bottom;
+	z-index: 0;
 }
 
 /* moving particles in the Sign Up (singup.html) page */
