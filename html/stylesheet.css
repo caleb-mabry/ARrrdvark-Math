@@ -4,6 +4,14 @@
   padding-right:10px;
 }
 
+.nav-link{
+  color: #151231;
+}
+
+.navbar-default {
+	background-color: #77878B;
+}
+
 /* centering text on the home(index.html) page */
 .center{
  position: absolute;
@@ -57,6 +65,7 @@ label {
 /* Standardizing the font size for the brand name in the navbar */
 .navbar-brand{
 	font-size: 25px;
+	color: #151231;
 }
 
 .active{
