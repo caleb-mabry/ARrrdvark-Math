@@ -22,9 +22,10 @@ font-size: 50px;
 }
 
 
-/* Refering to the body in the sign up(signup.html) page */
-body{
+/* Refering to the body in the sign up(signup.html) and login(login.html) page */
+.moving-backgrounds{
 	margin: 0;
+	overflow: hidden;
 }
 
 /* blue background in sign up(signup.html) page */
@@ -56,4 +57,8 @@ label {
 /* Standardizing the font size for the brand name in the navbar */
 .navbar-brand{
 	font-size: 25px;
+}
+
+.active{
+	background-color: #C85749;
 }
