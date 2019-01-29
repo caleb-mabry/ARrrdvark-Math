@@ -4,12 +4,20 @@
   padding-right:10px;
 }
 
+/* changes the color of the text in the navbar */
 .nav-link{
   color: #151231;
 }
 
+/* changes the background color of the navbar in signup and login */
 .navbar-default {
 	background-color: #77878B;
+}
+
+/* Standardizing the font size for the brand name in the navbar */
+.navbar-brand{
+	font-size: 25px;
+	color: #151231;
 }
 
 /* centering text on the home(index.html) page */
@@ -22,6 +30,8 @@
  color: #B3B3B4;
 }
 
+
+/* container <div> for the ARRdvark Math written on the banner in indext.html */
 .header{
 position: relative;
 text-align: center;
@@ -60,14 +70,9 @@ canvas{
 /* this is the white writing in the Sign Up(signup.html) page. */
 label {
 	color: #eee;
-}
+} 
 
-/* Standardizing the font size for the brand name in the navbar */
-.navbar-brand{
-	font-size: 25px;
-	color: #151231;
-}
-
+/* The active tab in the navbar changes color */
 .active{
 	background-color: #C85749;
 }
