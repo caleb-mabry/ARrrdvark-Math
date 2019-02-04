@@ -68,13 +68,18 @@ font-size: 50px;
 	overflow: hidden;
 }
 
+.moving-backgrounds-index{
+	margin: 0;
+	height: 100%;
+}
+
 /* blue background in sign up(signup.html) page */
 canvas{
 	top: 0;
 	left: 0;
-	display: absolute;
+	display: relative;
 	vertical-align: bottom;
-	z-index: -1;
+	z-index: 0;
 }
 
 /* moving particles in the Sign Up (singup.html) page */
@@ -87,7 +92,7 @@ canvas{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 0%;
-	z-index: 0;
+	z-index: -1;
 }
 
 /* this is the white writing in the Sign Up(signup.html) page. */
@@ -101,12 +106,13 @@ label {
 }
 
 /* text about the container in signup.html */
-.text-center{
+.text-center1{
 	font-size: 35px;
 	font-family: vanillaregular;
 	color: #eee;
-	margin-top: auto;
+	margin-top: 10%;
 	margin-left: 20%;
+	z-index: 1;
 }
 
 /* Sign up button in signup.html */
@@ -116,3 +122,6 @@ label {
 	margin-left: center;
 }
 
+.archie{
+	position: relative;
+}
