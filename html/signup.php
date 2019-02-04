@@ -1,4 +1,3 @@
-<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,7 +69,7 @@
 					<div class="row" style="padding-top: 10%; color: white" >
 						
 						<div class="col rounded" style="background-color: #323E78; padding-top: 5%">
-							<form method="post" action="signup.php">
+							<form method="post" action="add-user.php">
 								<!-- Display validation errors here -->
 								<div class="form-group">
 									<input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First Name">
