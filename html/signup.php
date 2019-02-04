@@ -1,3 +1,4 @@
+<?php include('add-user.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,24 +70,21 @@
 					<div class="row" style="padding-top: 10%; color: white" >
 						
 						<div class="col rounded" style="background-color: #323E78; padding-top: 5%">
-							<form>
+							<form method="post" action="add-user.php">
+								<!-- Display validation errors here -->
 								<div class="form-group">
-									<input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="First Name">
+									<input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First Name">
 								</div>
 								<div class="form-group">
-									<input type="email" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Last Name">
+									<input type="text" class="form-control" id="lastName" aria-describedby="lastName" placeholder="Last Name">
 								</div>
 								<div class="form-group">
-									<input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
+									<input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Password">
 								</div>
 								<div class="form-group">
-									<input type="email" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Password">
+									<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
 								</div>
-								<div class="form-group">
-									<input type="email" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Email">
-								</div>
-							</form>
-							<div class="form-check">
+								<div class="form-check">
 								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">
 									I do <b>NOT</b> want to recieve e-mails regarding updates or new products
@@ -100,8 +98,11 @@
 							</div>
 							<br>
 							<div class="form-group text-center-button">
-								<a class="btn btn-primary" href="signup.html" role="button">Sign Up</a>
+								<button class="btn btn-primary" type="submit" name="signup">Sign Up</button>
 							</div>
+							</form>
+							
+
 						</div>
 					</div>
 				</div>
