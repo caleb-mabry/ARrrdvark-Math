@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 } 
 
 $sql = "INSERT INTO users (ID, FirstName, LastName, Password, Email)
-VALUES ('1','$_POST["firstName"]','$_POST["lastName"]','$_POST["password"]','$_POST["email"]'";
+VALUES (DEFAULT, $_POST["firstName"]','$_POST["lastName"]','$_POST["password"]','$_POST["email"]'";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
