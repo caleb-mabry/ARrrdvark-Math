@@ -73,7 +73,7 @@ font-size: 50px;
 	margin: 0;
 }
 
-/* blue background in sign up(signup.html) page */
+/* interactive background in sign up(signup.html) page */
 canvas{
 	top: 0;
 	left: 0;
@@ -82,7 +82,7 @@ canvas{
 	z-index: 0;
 }
 
-/* moving particles in the Sign Up (singup.html) page */
+/* moving particles background in the Sign Up (singup.html) page */
 #particles-js {
 	position: absolute;
 	width: 100%;
