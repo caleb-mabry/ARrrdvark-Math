@@ -72,7 +72,7 @@
 						<div class="col rounded" style="background-color: #323E78; padding-top: 5%">
 							<form method="post" action="signup.php">
 								<!-- Display validation errors here -->
-								<?php include('errors.php'); ?>
+								<!-- <?php include('errors.php'); ?> -->
 								<div class="form-group">
 									<input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First Name">
 								</div>
@@ -97,7 +97,7 @@
 									I Agree to the <a href="#">Terms of Service</a> Policy
 								</label>
 							</div>
-														<br>
+							<br>
 							<div class="form-group text-center-button">
 								<button class="btn btn-primary" type="submit" name="signup">Sign Up</button>
 							</div>
