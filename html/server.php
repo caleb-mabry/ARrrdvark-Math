@@ -2,6 +2,10 @@
 	// Connect to the database
 	$db = new mysqli('localhost', 'root', 'root', 'arrrdvark_math');
 
+	if ($db->connect_error) {
+		die("connection failed: ".$db->connect_error);
+	}
+	echo "connect successfully";
 	// If the signup button is clicked
 	if (isset($_POST['signup'])) {
 		$firstName = mysql_real_escape_string($_POST['firstName']);
