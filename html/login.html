@@ -84,7 +84,7 @@
 					</div>
 					<div class="col-6 rounded" style="color: #7D86B2;background-color:  #323E78; padding-top: 5%">
 						<h3>Login</h3>
-						<form>
+						<form method="post" action="login.php">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Email address</label>
 								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
