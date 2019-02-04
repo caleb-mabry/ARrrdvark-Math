@@ -1,6 +1,6 @@
 <?php
 	// Connect to the database
-	$db = mysql_connect('localhost', 'root', 'root', 'arrrdvark_math');
+	$db = new mysqli('localhost', 'root', 'root', 'arrrdvark_math');
 
 	// If the signup button is clicked
 	if (isset($_POST['signup'])) {
