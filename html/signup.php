@@ -1,4 +1,4 @@
-<?php include('add-user.php'); ?>
+<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
