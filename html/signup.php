@@ -71,6 +71,9 @@
 						<div class="col rounded" style="background-color: #323E78; padding-top: 5%">
 							<form method="post" action="server.php">
 								<!-- Display validation errors here -->
+								<? php 
+								echo $emailErr;
+								?>
 								<div class="form-group">
 									<input type="text" class="form-control"  name="firstName" aria-describedby="firstName" placeholder="First Name">
 								</div>
