@@ -12,7 +12,11 @@ if (isset($_POST["signup"])) {
 	$lastName = $_POST["lastName"];
 	$password = $_POST["password"];
 	$email = $_POST["email"];
-	$emailAgree = $_POST["emailAgree"];
+	if (isset($_POST["emailAgree"])) {
+		$emailAgree = 1;
+	} else {
+		$emailAgree = 0;
+	}
 	$termsAgree = $_POST["termsAgree"];
 	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsofServiceAgreement) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
 	if ($conn->query($sql) === TRUE) {
