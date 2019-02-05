@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 if (isset($_POST['signup'])) {
 $sql = "INSERT INTO users (FirstName, LastName, Password, Email)
 VALUES (DEFAULT, $_POST["firstName"]','$_POST["lastName"]','$_POST["password"]','$_POST["email"]'";
-query($sql);
+$conn->query($sql);
 }
 
 if ($conn->query($sql) === TRUE) {
@@ -24,3 +24,12 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+test
+</body>
+</html>
