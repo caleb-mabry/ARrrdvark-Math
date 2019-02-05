@@ -5,49 +5,155 @@
   <!-- script for the moving background -->
   <script type="text/javascript" src="particles.js"></script>
 
-	  <!-- Required meta tags -->
+	<!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- Link to our stylesheet DO NOT MOVE -->
+  <link rel="stylesheet" href="stylesheet.css">
         
 
 	<title>ARrrdvark Math | How To</title>
 
 
   <style type="text/css">
-  @font-face {
-    font-family: vanillaregular;
-    src: url(Vanilla-webfont.woff);
+    @font-face {
+      font-family: vanillaregular;
+      src: url(Vanilla-webfont.woff);
+      }
+    h1, h3, a{
+      font-family:vanillaregular;
+      }
 
-  }
-  h1, h3, a{
-    font-family:vanillaregular;
-  }
+    @font-face {
+      font-family: 'Arvo', serif;
+      src: url(Arvo-Regular.ttf);
+      }
 
-  @font-face {
-    font-family: 'Arvo', serif;
-    src: url(Arvo-Regular.ttf);
-  }
+    p{               
+      font-family: 'Arvo', serif;
+      }
 
-  p{               
-    font-family: 'Arvo', serif;
-  }
+    @font-face{
+      font-family: 'eraserregular';
+      src: url(EraserRegular-webfont.woff);
+      src: url(EraserRegular-webfont.svg);
+      }
 
-  @font-face{
-    font-family: 'eraserregular';
-    src: url(EraserRegular-webfont.woff);
-    src: url(EraserRegular-webfont.svg);
-  }
+    .sidebar-link{
+      color: #D3D3D3;
+      } 
 
-  .sidebar-link{
-    color: #D3D3D3;
-  }
+    .center{
+      font-family: 'eraserregular';
+      }
+    
+    body{
+      font-family: 'vanillaregular';
+      }
+    .sidenav {
+      height: 100%;
+      width: 300px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #1fc8db;
+      background-image: linear-gradient(#0581FD 0%, #20A4F9 100%);
+      overflow-x: hidden;
+      padding-top: 20px;
+      }
+    .sidenav-cont{
+      width: 90%;
+      float: right;
+      }
 
-  .center{
-    font-family: 'eraserregular';
-  }
+    .sidenav a, .dropdown-btn {
+      padding: 20px 20px 20px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      opacity: 0.7;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      }
+
+    .sidenav p{
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #CCCCCC;
+      display: block;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      }
+
+    .active {
+      background-color: rgba(95, 38, 255, 0.4);
+      color: white;
+      border-top-left-radius: 40px;
+      }
+
+    .active::after {
+      font-weight: 900;
+      display: inline-block;
+      padding-right: 15px;
+      font-size: 180%;
+      color: #034171;
+      }
+
+    .dropdown-container {
+      display: none;
+      background-color: rgba(95, 38, 255, 0.4);
+      opacity: 0.7;
+      border-bottom-left-radius: 40px;
+      }
+
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+      }
+
+    .sidenav a:hover, .dropdown-btn:hover{
+      background-color: rgba(53, 164, 255, 0.6);
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      opacity: 1;
+      }
+    
+    .active:hover{
+      background-color: rgba(53, 164, 255, 0.6);
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 0;
+      opacity: 1;
+      }
+
+    .dropdown-container a:hover{
+      background-color: rgba(53, 164, 255, 0.6);
+      border-radius: 0;
+      opacity: 1;
+      }
+
+    .dropdown-container a:last-child:hover{
+      border-bottom-left-radius: 40px;
+      }
+
+    .main {
+      margin-left: 300px; 
+      font-size: 28px; 
+      padding: 0px 10px;
+      }
+
   </style>
 
 
@@ -88,114 +194,37 @@
     </ul>
   </div>
 </nav>
-
 <!-- End of Navbar at the top -->
 
 <body class="moving-backgrounds-scroll-allow">
-
-      <!-- Link to our stylesheet DO NOT MOVE -->
-  <link rel="stylesheet" href="stylesheet.css">
-  <div id="particles-js"></div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
+<div id="particles-js"></div>
+<div class="sidenav">
+  <div class="sidenav-cont">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <button class="dropdown-btn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
   </div>
+  <a href="#contact">Contact</a>
 </div>
-  <div class="wrapper">
-    <!-- Sidebar -->
-    <nav class="bg-dark" id="sidebar">
-
-
-        <ul class="list-unstyled components">
-            <li>
-                <a href="#Doc1Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 1</a>
-                <ul class="collapse list-unstyled" id="Doc1Submenu">
-                    <li>
-                        <a class="sidebar-link" href="#">Itching ointment recipe</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">soda can sandals</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">pink and yellow monkeys</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#Doc2Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 2</a>
-                <ul class="collapse list-unstyled" id="Doc2Submenu">
-                    <li>
-                        <a class="sidebar-link" href="#">Pimples</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">Jock Straps</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">Euphonium symphony</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#Doc3Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 3</a>
-                <ul class="collapse list-unstyled" id="Doc3Submenu">
-                    <li>
-                        <a class="sidebar-link" href="#">Pimples</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">Jock Straps</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">Euphonium symphony</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#Doc4Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 4</a>
-                <ul class="collapse list-unstyled" id="Doc4Submenu">
-                    <li>
-                        <a class="sidebar-link" href="#">Pimples</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">Jock Straps</a>
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="#">Euphonium symphony</a>
-                    </li>
-                </ul>
-            </li>
-            
-        </ul>
-    </nav>
-  </div>
-
-    <!-- End of Sidebar -->
-
-    <!-- Sidebar toggle button -->
-
-    <div id="content">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-                <i class="fas fa-align-left"></i>
-                <span>Toggle Sidebar</span>
-            </button>
-
-        </div>
-    </nav>
 </div>
 
-    <!-- End of Sidebar toggle button -->
+<div class="main">
+  <h2>Sidebar</h2>
+  <p>Lorem ipsum dolor sit amet, ei quo liber maluisset, per ut audire recusabo, in duo debitis minimum. Vel at inermis facilisis. Erant voluptatum at has. Justo menandri definitionem sea ut, audiam accusata pri ad.
 
+Duo id novum essent tibique, in agam semper maluisset eos, vis ad causae corpora. Praesent electram periculis ei eum, putant probatus ne eum, luptatum reformidans te per. Te nam labores accusamus.</p>
+  <p>Lorem ipsum dolor sit amet, ei quo liber maluisset, per ut audire recusabo, in duo debitis minimum. Vel at inermis facilisis. Erant voluptatum at has. Justo menandri definitionem sea ut, audiam accusata pri ad.
+
+Duo id novum essent tibique, in agam semper maluisset eos, vis ad causae corpora. Praesent electram periculis ei eum, putant probatus ne eum, luptatum reformidans te per. Te nam labores accusamus.</p>
 </div>
+
 
 
 

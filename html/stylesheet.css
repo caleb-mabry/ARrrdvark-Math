@@ -99,10 +99,6 @@ label {
 	color: #eee;
 } 
 
-/* The active tab in the navbar changes color */
-.active{
-	background-color: #C85749;
-}
 
 /* text about the container in signup.html */
 .text-center1{
@@ -124,13 +120,5 @@ label {
 .archie{
 	position: relative;
 }
-
-/* sidebar wrapper in howto.html */
-.wrapper {
-    display: flex;
-    align-items: stretch;
-}
-
-
 
 
