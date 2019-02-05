@@ -49,10 +49,10 @@
 		</ul>
 		<ul class="navbar-nav mr-right">
 			<li class="nav-item">
-				<a class="nav-link" href="login.html">Login</a>
+				<a class="nav-link" href="login.php">Login</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="signup.html">Sign Up</a>
+				<a class="nav-link" href="signup.php">Sign Up</a>
 			</li>
 		</ul>
 	</div>
@@ -72,6 +72,9 @@
 							<form method="post" action="server.php">
 								<!-- Display validation errors here -->
 								<div class="form-group">
+									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
+								</div>
+								<div class="form-group">
 									<input type="text" class="form-control"  name="firstName" aria-describedby="firstName" placeholder="First Name">
 								</div>
 								<div class="form-group">
@@ -80,17 +83,14 @@
 								<div class="form-group">
 									<input type="password" class="form-control" name="password" aria-describedby="password" placeholder="Password">
 								</div>
-								<div class="form-group">
-									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
-								</div>
 								<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<input class="form-check-input" type="checkbox" name="emailAgree" value="" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">
-									I do <b>NOT</b> want to recieve e-mails regarding updates or new products
+									I <b>want</b> to recieve e-mails regarding updates or new products
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<input class="form-check-input" type="checkbox" name="termsAgree" value="" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">
 									I Agree to the <a href="#">Terms of Service</a> Policy
 								</label>
