@@ -84,13 +84,13 @@
 									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
 								</div>
 								<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<input class="form-check-input" type="checkbox" name="emailAgree" value="" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">
-									I do <b>NOT</b> want to recieve e-mails regarding updates or new products
+									I <b>want</b> to recieve e-mails regarding updates or new products
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<input class="form-check-input" type="checkbox" name="termsAgree" value="" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">
 									I Agree to the <a href="#">Terms of Service</a> Policy
 								</label>
