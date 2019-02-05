@@ -13,9 +13,14 @@ if (isset($_POST["signup"])) {
 	$password = $_POST["password"];
 	$email = $_POST["email"];
 	if (isset($_POST["emailAgree"])) {
-		$emailAgree = 1;
+		$emailAgree = 'true';
 	} else {
-		$emailAgree = 0;
+		$emailAgree = 'false';
+	}
+		if (isset($_POST["termsAgree"])) {
+		$termsAgree = 'true';
+	} else {
+		$termsAgree = 'false';
 	}
 	$termsAgree = $_POST["termsAgree"];
 	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsofServiceAgreement) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
