@@ -6,8 +6,7 @@ $dbname = "arrrdvark_math";
 
 // Create connection
 $conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
-$firstNameErr = $lastNameErr = $passwordErr = $emailErr = "";
-if (isset($_POST['signup'])) {
+
 	if (empty($_POST['firstName'])) {
 		$firstNameErr = "First name is required";
 	} else {
@@ -31,7 +30,6 @@ if (isset($_POST['signup'])) {
 	} else {
 		$email = $_POST['email'];
 	}
-}
 
 	$sql = "INSERT INTO users (FirstName, LastName, Password, Email) VALUES ('$firstName','$lastName','$password','$email')";
 	if ($conn->query($sql) === TRUE) {
