@@ -12,23 +12,23 @@
 
 
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-<style type="text/css">
+	<style type="text/css">
 	@font-face {
-    	font-family: vanillaregular;
+		font-family: vanillaregular;
 		src: url(Vanilla-webfont.woff);
 	}
 
 	@font-face {
-        font-family: 'Arvo';
-        src: url(Arvo-Regular.ttf);
-        }
+		font-family: 'Arvo';
+		src: url(Arvo-Regular.ttf);
+	}
 	
 	h2, h3, h4, h5{
-	font-family: 'Arvo';
+		font-family: 'Arvo';
 	}	
 	
 	h1, a{
-	  font-family:vanillaregular;
+		font-family:vanillaregular;
 	}
 
 	body{
@@ -36,10 +36,10 @@
 	}
 </style>
 
-	<title>ARrrdvark Math</title>
+<title>ARrrdvark Math</title>
 
-	<!-- Our CSS stylesheet.css DON'T MOVE -->	
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- Our CSS stylesheet.css DON'T MOVE -->	
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 
 </head>
@@ -79,23 +79,36 @@
 	<div id="particles-js"></div>
 	<div class=" moving-backgrounds-allow-scroll container-fluid header">
 
-		<img class="rounded"src="togetherness.jpeg" alt="dudes" height="5%" width="60%" >
 	</div>
 	<div class="container-fluid">
 		<div class="row">
+			<div class="col-2">
+				<!-- Used as Spacing -->
+			</div>
+			<div class="col">
+				<img class="rounded text-c"src="togetherness.jpeg" alt="dudes" height="90%" width="100%" >
+			</div>
+			<div class="col-2">
+				<!-- Used as Spacing -->
+			</div>
+
 			<!--This is where an image of the two of us should go-->
 		</div>
-		<div class="row" style="padding-left: 8%">
-			<div class="col-5 left-align">
-				<h1>About Us</h1>
-				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h4>
+
+		<div class="row">
+			<div class="col-2">
+				<!-- Used as Spacing -->
 			</div>
-			<div class="col-1">
+
+			<div class="col-8 text-center" style="background-color: #323E78">
+				<h1>about us</h1>
+				<br>
+				<h3>Cameron and Caleb are both Seniors who are attending Christopher Newport University. </h3>
 			</div>
-			<div class="col-5 left-align">
-				<h1 class="mb-5">Our Mission Statement</h1>
-				<h2>Integrating technology and education to help students excel.</h2>
+			<div class="col-2">
+				<!-- Used as Spacing -->
 			</div>
+
 		</div>
 		<div class="row" style="padding-left: 8%">
 			<div class="col" style="padding-top: 3%">
@@ -133,65 +146,65 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
 </script>
-	<script>
-		particlesJS("particles-js", {
-			particles: {
-				number: { value: 110, density: { enable: true, value_area: 800 } },
-				color: { value: "#afb63e" },
-				shape: {
-					type: "star",
-					stroke: { width: 0, color: "#000000" },
-					polygon: { nb_sides: 5 },
-					image: { src: "img/github.svg", width: 100, height: 100 }
-				},
-				opacity: {
-					value: 0.5,
-					random: false,
-					anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-				},
-				size: {
-					value: 3,
-					random: false,
-					anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-				},
-				line_linked: {
-					enable: true,
-					distance: 150,
-					color: "#28219b",
-					opacity: 0.4,
-					width: 1
-				},
-				move: {
-					enable: true,
-					speed: 0.75,
-					direction: "bottom",
-					random: false,
-					straight: false,
-					out_mode: "bounce",
-					bounce: false,
-					attract: { enable: false, rotateX: 600, rotateY: 1200 }
-				}
+<script>
+	particlesJS("particles-js", {
+		particles: {
+			number: { value: 110, density: { enable: true, value_area: 800 } },
+			color: { value: "#afb63e" },
+			shape: {
+				type: "star",
+				stroke: { width: 0, color: "#000000" },
+				polygon: { nb_sides: 5 },
+				image: { src: "img/github.svg", width: 100, height: 100 }
 			},
-			interactivity: {
-				detect_on: "canvas",
-				events: {
-					onhover: { enable: false, mode: "repulse" },
-					onclick: { enable: true, mode: "push" },
-					resize: true
-				},
-				modes: {
-					grab: { distance: 400, line_linked: { opacity: 1 } },
-					bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
-					repulse: { distance: 200, duration: 0.4 },
-					push: { particles_nb: 4 },
-					remove: { particles_nb: 2 }
-				}
+			opacity: {
+				value: 0.5,
+				random: false,
+				anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
 			},
-			retina_detect: true
-		});
+			size: {
+				value: 3,
+				random: false,
+				anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+			},
+			line_linked: {
+				enable: true,
+				distance: 150,
+				color: "#28219b",
+				opacity: 0.4,
+				width: 1
+			},
+			move: {
+				enable: true,
+				speed: 0.75,
+				direction: "bottom",
+				random: false,
+				straight: false,
+				out_mode: "bounce",
+				bounce: false,
+				attract: { enable: false, rotateX: 600, rotateY: 1200 }
+			}
+		},
+		interactivity: {
+			detect_on: "canvas",
+			events: {
+				onhover: { enable: false, mode: "repulse" },
+				onclick: { enable: true, mode: "push" },
+				resize: true
+			},
+			modes: {
+				grab: { distance: 400, line_linked: { opacity: 1 } },
+				bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+				repulse: { distance: 200, duration: 0.4 },
+				push: { particles_nb: 4 },
+				remove: { particles_nb: 2 }
+			}
+		},
+		retina_detect: true
+	});
 
-		requestAnimationFrame(update);
-	</script>
+	requestAnimationFrame(update);
+</script>
 </body>
 </html>
 
