@@ -72,16 +72,16 @@
 							<form method="post" action="server.php">
 								<!-- Display validation errors here -->
 								<div class="form-group">
-									<input type="text" class="form-control" id="firstName" aria-describedby="firstName" placeholder="First Name">
+									<input type="text" class="form-control"  name="firstName" aria-describedby="firstName" placeholder="First Name">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" id="lastName" aria-describedby="lastName" placeholder="Last Name">
+									<input type="text" class="form-control" name="lastName" aria-describedby="lastName" placeholder="Last Name">
 								</div>
 								<div class="form-group">
-									<input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Password">
+									<input type="password" class="form-control" name="password" aria-describedby="password" placeholder="Password">
 								</div>
 								<div class="form-group">
-									<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
 								</div>
 								<div class="form-check">
 								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
