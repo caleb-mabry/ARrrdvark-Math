@@ -31,7 +31,7 @@ if (isset($_POST['signup'])) {
 	} else {
 		$email = $_POST["email"];
 	}
-	
+}
 	$sql = "INSERT INTO users (FirstName, LastName, Password, Email) VALUES ('$firstName','$lastName','$password','$email')";
 	if ($conn->query($sql) === TRUE) {
 		echo "New record created successfully";
