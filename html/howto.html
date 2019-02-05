@@ -61,8 +61,7 @@
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: #1fc8db;
-      background-image: linear-gradient(#0581FD 0%, #20A4F9 100%);
+      background-color: #696969;
       overflow-x: hidden;
       padding-top: 20px;
       }
@@ -102,6 +101,9 @@
       background-color: rgba(95, 38, 255, 0.4);
       color: white;
       border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
       }
 
     .active::after {
@@ -154,6 +156,13 @@
       padding: 0px 10px;
       }
 
+    img{
+      width: 50px;
+      height: auto;
+      vertical-align: middle;
+      padding-right: 10px;
+      }
+
   </style>
 
 
@@ -200,6 +209,7 @@
 <div id="particles-js"></div>
 <div class="sidenav">
   <div class="sidenav-cont">
+    <p class="pt-5"><img class="pt-5" src='https://cdn.worldvectorlogo.com/logos/codepen-icon.svg'>Logo</p>
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#clients">Clients</a>
@@ -304,6 +314,23 @@ Duo id novum essent tibique, in agam semper maluisset eos, vis ad causae corpora
 
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
 
 </body>
 
