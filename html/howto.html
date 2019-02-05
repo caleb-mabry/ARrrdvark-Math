@@ -11,15 +11,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <style type="text/css">
-        @font-face {
-        font-family: vanillaregular;
-        src: url(Vanilla-webfont.woff);
-        }
 
-        h1, a{
-          font-family:vanillaregular;
-        }
+        
 </style>
 
 	<title>ARrrdvark Math | How To</title>
@@ -27,42 +20,102 @@
   <!-- Link to our stylesheet DO NOT MOVE -->
   <link rel="stylesheet" href="stylesheet.css">
 
-</head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <a class="navbar-brand" href="index.html">ARrrdvark Math</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <style type="text/css">
+  @font-face {
+    font-family: vanillaregular;
+    src: url(Vanilla-webfont.woff);
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="howto.html">How To</a>
-      </li>
-     <li class ="nav-item">
-       <a class="nav-link" href="forum.html">Forum</a>
-     </li>
-   </ul>
-    <ul class="navbar-nav mr-right">
-          <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="signup.php">Sign Up</a>
-          </li>
-    </ul>
-</div>
-</nav>
+  }
+  h1, a{
+    font-family:vanillaregular;
+  }
+
+  @font-face {
+    font-family: 'Arvo', serif;
+    src: url(Arvo-Regular.ttf);
+  }
+
+  p{               
+    font-family: 'Arvo', serif;
+  }
+
+  @font-face{
+    font-family: 'eraserregular';
+    src: url(EraserRegular-webfont.woff);
+    src: url(EraserRegular-webfont.svg);
+  }
+
+  .center{
+    font-family: 'eraserregular';
+  }
+</style>
+
+
+</head>
+
 
 
 <body class="moving-backgrounds">
   <div id="particles-js"></div>
+
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>ARrrdvark Learning</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="index.html">Home</a>
+                
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End of Sidebar -->
+
+    <!-- Sidebar toggle button -->
+
+    <div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+
+        </div>
+    </nav>
+</div>
+
+    <!-- End of Sidebar toggle button -->
+
+</div>
 
 
 

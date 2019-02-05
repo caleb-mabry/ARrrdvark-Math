@@ -121,6 +121,14 @@ label {
 	margin-left: center;
 }
 
+/* ARchi the ARrrdvark photo in index.html */
 .archie{
 	position: relative;
+}
+
+/* sidebar wrapper in howto.html */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }
