@@ -22,7 +22,6 @@ if (isset($_POST["signup"])) {
 	} else {
 		$termsAgree = '0';
 	}
-	$termsAgree = $_POST["termsAgree"];
 	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
 	if ($conn->query($sql) === TRUE) {
 		echo "New record created successfully";
