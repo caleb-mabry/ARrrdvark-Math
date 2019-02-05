@@ -1,4 +1,3 @@
-<?php include('add-user.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
