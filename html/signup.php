@@ -72,6 +72,9 @@
 							<form method="post" action="server.php">
 								<!-- Display validation errors here -->
 								<div class="form-group">
+									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
+								</div>
+								<div class="form-group">
 									<input type="text" class="form-control"  name="firstName" aria-describedby="firstName" placeholder="First Name">
 								</div>
 								<div class="form-group">
@@ -79,9 +82,6 @@
 								</div>
 								<div class="form-group">
 									<input type="password" class="form-control" name="password" aria-describedby="password" placeholder="Password">
-								</div>
-								<div class="form-group">
-									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
 								</div>
 								<div class="form-check">
 								<input class="form-check-input" type="checkbox" name="emailAgree" value="" id="defaultCheck1">
