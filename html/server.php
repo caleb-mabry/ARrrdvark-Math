@@ -6,7 +6,7 @@ $dbname = "arrrdvark_math";
 
 // Create connection
 $conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
-
+$firstName = $lastName = $password = $email = "";
 	if (empty($_POST['firstName'])) {
 		$firstNameErr = "First name is required";
 	} else {
