@@ -13,17 +13,17 @@ if (isset($_POST["signup"])) {
 	$password = $_POST["password"];
 	$email = $_POST["email"];
 	if (isset($_POST["emailAgree"])) {
-		$emailAgree = 'true';
+		$emailAgree = '1';
 	} else {
-		$emailAgree = 'false';
+		$emailAgree = '0';
 	}
-		if (isset($_POST["termsAgree"])) {
-		$termsAgree = 'true';
+	if (isset($_POST["termsAgree"])) {
+		$termsAgree = '1';
 	} else {
-		$termsAgree = 'false';
+		$termsAgree = '0';
 	}
 	$termsAgree = $_POST["termsAgree"];
-	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsofServiceAgreement) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
+	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
 	if ($conn->query($sql) === TRUE) {
 		echo "New record created successfully";
 	} else {
