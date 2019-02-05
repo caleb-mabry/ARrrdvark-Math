@@ -57,8 +57,44 @@
 </head>
 
 
+<!-- Beginning of Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="index.html">
+    ARrrdvark Learning
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<body class="moving-backgrounds">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="howto.html">How To</a>
+      </li>
+      <li class ="nav-item">
+        <a class="nav-link" href="forum.html">Forum</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-right">
+      <li class="nav-item">
+        <a class="nav-link" href="login.php">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signup.php">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- End of Navbar at the top -->
+
+<body class="moving-backgrounds-scroll-allow">
   <div id="particles-js"></div>
 
   <div class="wrapper">
@@ -70,16 +106,60 @@
 
         <ul class="list-unstyled components">
             <li>
-                <a class="sidebar-link" href="index.html">Home</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 1</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a class="sidebar-link" href="#">Itching ointment recipe</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">soda can sandals</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">pink and yellow monkeys</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a class="sidebar-link" href="about.html">About</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 2</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a class="sidebar-link" href="#">Pimples</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Jock Straps</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Euphonium symphony</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a class="sidebar-link active" href="howto.html">How To</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 3</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a class="sidebar-link" href="#">Pimples</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Jock Straps</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Euphonium symphony</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a class="sidebar-link" href="forum.html">Forum</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle sidebar-link">Document 4</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a class="sidebar-link" href="#">Pimples</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Jock Straps</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link" href="#">Euphonium symphony</a>
+                    </li>
+                </ul>
             </li>
             
         </ul>
