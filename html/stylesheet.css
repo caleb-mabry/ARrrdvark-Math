@@ -53,14 +53,6 @@
  font-size:200px;
 }
 
-/* container <div> for the ARRdvark Math written on the banner in indext.html */
-.header{
-position: relative;
-text-align: center;
-color: white;
-font-size: 50px;
-}
-
 
 /* Refering to the body in the sign up(signup.html) and login(login.html) page */
 .moving-backgrounds{
