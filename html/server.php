@@ -6,13 +6,9 @@ $dbname = "arrrdvark_math";
 
 // Create connection
 $conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
 }
 if (isset($_POST["signup"])) {
+
 	$firstName = test_input($_POST["firstName"]);
 	$lastName = test_input($_POST["lastName"]);
 	$password = test_input($_POST["password"]);
@@ -34,6 +30,11 @@ if (isset($_POST["signup"])) {
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}
+	function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
 
 }
 $conn->close();
