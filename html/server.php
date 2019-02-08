@@ -37,7 +37,7 @@ if (isset($_POST["signup"])) {
 	}
 	/* Ensure that you do not have duplicate primary keys */
 	$PrimaryKeyQuery = "SELECT * FROM  `users`  WHERE `email`='$email' ";
-	$result = mysql_query($query);
+	$result = $conn->query($query);
 	if (!mysql_num_rows($result)) {
 		/* Inserting the variables into the database */
 		$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
