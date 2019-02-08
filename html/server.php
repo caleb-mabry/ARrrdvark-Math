@@ -43,6 +43,6 @@ if (isset($_POST["signup"])) {
 
 }
 $conn->close();
-header("Location: 52.14.132.161/login.php"); /* Redirect browser */
+header("Location: http://52.14.132.161/login.php"); /* Redirect browser */
 exit();
 ?>
