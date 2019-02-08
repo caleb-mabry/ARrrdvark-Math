@@ -6,13 +6,6 @@ $dbname = "arrrdvark_math";
 
 // Create connection
 $conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	$firstName = test_input($_POST["firstName"]);
-	$lastName = test_input($_POST["lastName"]);
-	$password = test_input($_POST["password"]);
-	$email = test_input($_POST["email"]);
-}
-
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
