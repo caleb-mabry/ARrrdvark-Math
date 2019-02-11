@@ -108,7 +108,7 @@
 															<span aria-hidden="true">&times;</span>
 														</button>
 													</div>
-													<div class="modal-body">
+													<div class="modal-body" style="color: black">
 														<h1>Terms of Service ("Terms")</h1>
 
 
