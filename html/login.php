@@ -27,13 +27,13 @@
 
 </style>
 
-<title>ARrrdvark Math | Login</title>
+<title>ARdvark Math | Login</title>
 
 
 
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-	<a class="navbar-brand" href="index.html">ARrrdvark Math</a>
+	<a class="navbar-brand" href="index.html">ARdvark Math</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -77,7 +77,7 @@
 					
 					<div class="col-6 rounded" style="color: #7D86B2;background-color: #323E78; padding-top: 20%;border-right: 1px dashed #ccc">
 						<p class="text-center"><b>New User?</b><br>
-						Create an ARrrdvark Account</p>
+						Create an ARdvark Account</p>
 						<div class="form-group text-center">
 							<a class="btn btn-primary" href="signup.html" role="button">Sign Up</a>
 						</div>

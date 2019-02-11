@@ -21,13 +21,13 @@
 	}
 </style>
 
-<title>ARrrdvark Math | Sign Up</title>
+<title>ARdvark Math | Sign Up</title>
 
 <!-- Link to our stylesheet DO NOT MOVE -->
 <link rel="stylesheet" href="stylesheet.css">
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-	<a class="navbar-brand" href="index.html">ARrrdvark Math</a>
+	<a class="navbar-brand" href="index.html">ARdvark Math</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
