@@ -1,6 +1,6 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-"ARrrdvark", 
+"ARdvark", 
 "Math"
 );
 var iSpeed = 100; // time delay of print out
