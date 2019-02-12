@@ -32,10 +32,10 @@ if (isset($_POST["signup"])) {
 	}
 	/* Ensure that you do not have duplicate primary keys */
 	$PrimaryKeyQuery = "SELECT * FROM  `users`  WHERE `email`='$email' ";
-	$result = $conn->query($query);
-	if (!mysqli_num_rows($result)) {
-		/* Inserting the variables into the database */
-		$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
+
+	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
+	$result = $conn->query($sql);
+	if ($result) {
 		if ($conn->query($sql) === TRUE) {
 			echo "New record created successfully";
 		} else {
