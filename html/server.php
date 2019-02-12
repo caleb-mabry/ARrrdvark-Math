@@ -45,11 +45,11 @@ if (isset($_POST["signup"])) {
 	if ($result) {
 		if ($conn->query($sql) === TRUE) {
 			echo "New record created successfully";
+			header("Location: https://ardvarklearning.net/login.php"); /* Redirect browser */
 		} else {
 			echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 	}
-
 }
-header("Location: https://ardvarklearning.net/login.php"); /* Redirect browser */
+
 ?>
