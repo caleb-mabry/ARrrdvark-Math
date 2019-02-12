@@ -1,5 +1,6 @@
-<?php include('db-connect.php');>
-// Create connection
+<?php include('db-connect.php');?>
+<?
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$firstName = test_input($_POST["firstName"]);
 	$lastName = test_input($_POST["lastName"]);
