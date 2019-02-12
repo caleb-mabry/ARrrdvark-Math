@@ -1,5 +1,5 @@
-<?php include('db-connect.php');?>
-<?
+<?php include('db-connect.php');>
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$firstName = test_input($_POST["firstName"]);
