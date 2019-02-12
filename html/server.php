@@ -1,6 +1,15 @@
-<?php include('db-connect.php');>
+<?php include('db-connect.php');?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Just a test</p>
+</body>
+</html>
 
-
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$firstName = test_input($_POST["firstName"]);
 	$lastName = test_input($_POST["lastName"]);
