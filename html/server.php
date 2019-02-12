@@ -43,5 +43,4 @@ if (isset($_POST["signup"])) {
 
 }
 header("Location: https://ardvarklearning.net/login.php"); /* Redirect browser */
-exit();
 ?>
