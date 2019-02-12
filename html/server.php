@@ -1,11 +1,5 @@
-<?php
-$servername = "localhost";
-$serverusername = "root";
-$serverpassword = "root";
-$dbname = "arrrdvark_math";
-
+<?php include('db-connect.php');>
 // Create connection
-$conn = new mysqli($servername, $serverusername, $serverpassword, $dbname);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$firstName = test_input($_POST["firstName"]);
 	$lastName = test_input($_POST["lastName"]);
@@ -50,6 +44,6 @@ if (isset($_POST["signup"])) {
 
 }
 $conn->close();
-header("Location: http://52.14.132.161/login.php"); /* Redirect browser */
+header("Location: https://ardvarklearning.net/login.php"); /* Redirect browser */
 exit();
 ?>

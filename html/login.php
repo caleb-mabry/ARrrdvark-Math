@@ -27,7 +27,7 @@
 
 </style>
 
-<title>ARrrdvark Math | Login</title>
+<title>ARdvarkLearning | Login</title>
 
 
 
@@ -79,7 +79,7 @@
 						<p class="text-center"><b>New User?</b><br>
 						Create an ARrrdvark Account</p>
 						<div class="form-group text-center">
-							<a class="btn btn-primary" href="signup.html" role="button">Sign Up</a>
+							<a class="btn btn-primary" href="signup.php" role="button">Sign Up</a>
 						</div>
 					</div>
 					<div class="col-6 rounded" style="color: #7D86B2;background-color:  #323E78; padding-top: 5%">
