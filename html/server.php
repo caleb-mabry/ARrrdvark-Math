@@ -30,8 +30,6 @@ if (isset($_POST["signup"])) {
 	} else {
 		$termsAgree = '0';
 	}
-	/* Ensure that you do not have duplicate primary keys */
-	$PrimaryKeyQuery = "SELECT * FROM  `users`  WHERE `email`='$email' ";
 
 	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
 	$result = $conn->query($sql);
