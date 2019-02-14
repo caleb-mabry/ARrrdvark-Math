@@ -49,8 +49,6 @@
  top:40%;
  left:50%;
  z-index:1;
- color: #B3B3B4
- font-size:200px;
 }
 
 
@@ -108,10 +106,15 @@ label {
 	margin-left: center;
 }
 
-/* ARchi the ARrrdvark photo in index.html */
-.archie{
-	position: relative;
+
+/* Overriding bootstrap container fluid to ensure mobile version works */
+.container-fluid {
+padding-left: 0;
+padding-right: 0;
+margin-left: auto;
+margin-right: auto;
 }
+
 .sidebar-link{
       color: #D3D3D3;
       } 
