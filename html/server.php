@@ -1,15 +1,5 @@
-<?php include('db-connect.php');?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<p>Just a test</p>
-</body>
-</html>
+<?php include('db-connect.php');
 
-<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$firstName = test_input($_POST["firstName"]);
 	$lastName = test_input($_POST["lastName"]);
@@ -43,6 +33,6 @@ if (isset($_POST["signup"])) {
 
 		
 }
-	header("Location: https://ardvarklearning.net/login.php");
+	header("Location: https://ardvarklearning.net/login.php"); 	
  /* Redirect browser */
 ?>
