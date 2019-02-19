@@ -38,14 +38,11 @@ if (isset($_POST["signup"])) {
 		$termsAgree = '0';
 	}
 	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
-	$result = $conn->query($sql);
-	if ($result) {
-		if ($conn->query($sql) === TRUE) {
-			echo "New record created successfully";
-		} else {
-			echo "Error: " . $sql . "<br>" . $conn->error;
-		}
-	}
+
+	$conn->query($sql);
+
+		
 }
-header("Location: https://ardvarklearning.net/login.php"); /* Redirect browser */
+	header("Location: https://ardvarklearning.net/login.php");
+ /* Redirect browser */
 ?>
