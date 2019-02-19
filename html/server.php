@@ -1,12 +1,4 @@
-<?php 
-$servername ="ardvarklearning.ch9a31kbn4gt.us-east-1.rds.amazonaws.com"
-$username	="ardvarklearning";
-$password	="C&Ccapstone2019";
-$dbname		="ardvarklearning"
-$port		="3306";
-
-?>
-
+<?php include('db-connect.php');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$password = test_input($_POST["password"]);
 	$email = test_input($_POST["email"]);
 }
-
 function test_input($data) {
 	$data = trim($data);
 	$data = stripslashes($data);
@@ -36,7 +27,6 @@ if (isset($_POST["signup"])) {
 	$lastName = test_input($_POST["lastName"]);
 	$password = test_input($_POST["password"]);
 	$email = test_input($_POST["email"]);
-
 	if (isset($_POST["emailAgree"])) {
 		$emailAgree = '1';
 	} else {
@@ -47,10 +37,10 @@ if (isset($_POST["signup"])) {
 	} else {
 		$termsAgree = '0';
 	}
-	$conn = new mysqli($servername, $username, $password, $dbname, $port);
 	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
 	$result = $conn->query($sql);
 	if ($result) {
+		if ($conn->query($sql) === TRUE) {
 			echo "New record created successfully";
 		} else {
 			echo "Error: " . $sql . "<br>" . $conn->error;
