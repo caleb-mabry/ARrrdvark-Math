@@ -1,4 +1,12 @@
-<?php include('db-connect.php');?>
+<?php 
+$servername ="ardvarklearning.ch9a31kbn4gt.us-east-1.rds.amazonaws.com"
+$username	="ardvarklearning";
+$password	="C&Ccapstone2019";
+$dbname		="ardvarklearning"
+$port		="3306";
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +47,7 @@ if (isset($_POST["signup"])) {
 	} else {
 		$termsAgree = '0';
 	}
-
+	$conn = new mysqli($servername, $username, $password, $dbname, $port);
 	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
 	$result = $conn->query($sql);
 	if ($result) {
