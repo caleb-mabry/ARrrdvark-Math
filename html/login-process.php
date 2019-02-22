@@ -1,5 +1,4 @@
-<?php
-include('db-connect.php');
+<?php include('db-connect.php');
 
             $sql = "SELECT 
                         email,
@@ -7,9 +6,9 @@ include('db-connect.php');
                     FROM
                         users
                     WHERE
-                        email = '" . mysql_real_escape_string($_POST['emailLogin']) . "'
+                        email = mysql_real_escape_string($_POST['emailLogin'])
                     AND
-                        password = '" . sha1($_POST['emailPassword']) . "'";
+                        password = sha1($_POST['emailPassword'])";
 $result = mysqli_query($conn,$sql);
       if(!$result)      {
                 //something went wrong, display the error
