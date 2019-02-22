@@ -6,11 +6,11 @@ $sql = "SELECT
 		FROM
 			users
 		WHERE
-			email = mysqli_real_escape_string($_POST['emailLogin'])
+			email = $_POST["emailLogin"]
 		AND
-			user_pass = sha1($_POST['user_pass'])";
+			user_pass = sha1($_POST["passwordLogin"])";
 
-$result = mysqli_query($sql);
+$result =$conn->query($sql);
 if(!$result) {
 	echo "Something went wrong while signing in. Please try again later";
 }
