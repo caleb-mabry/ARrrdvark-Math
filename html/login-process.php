@@ -17,5 +17,5 @@ if(!$result) {
 else {
 	$_SESSION['signed_in'] = true;
 	$_SESSION['user_name'] = $_POST['email'];
-	header(Location: /forum.html)
+	header("Location: https://ardvarklearning.net/login.php")
 }
