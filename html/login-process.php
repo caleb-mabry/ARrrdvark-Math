@@ -6,10 +6,10 @@
                     FROM
                         users
                     WHERE
-                        email = mysql_real_escape_string($_POST['emailLogin'])
+                        email = $_POST['emailLogin'])
                     AND
                         password = sha1($_POST['emailPassword'])";
-$result = mysqli_query($conn,$sql);
+$result = $conn->query($sql);
       if(!$result)      {
                 //something went wrong, display the error
                 echo 'Something went wrong while signing in. Please try again later.';
