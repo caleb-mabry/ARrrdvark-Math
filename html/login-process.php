@@ -10,7 +10,12 @@ include('db-connect.php');
                         email = '" . mysql_real_escape_string($_POST['emailLogin']) . "'
                     AND
                         password = '" . sha1($_POST['emailPassword']) . "'";
-$conn->query($sql);
+if ($conn->query($sql)) {
+	echo "It worked";
+}
+else {
+	echo "please give me this error message";
+}
 
-header("Location: https://ardvarklearning.net/forum.php")
 ?>
+
