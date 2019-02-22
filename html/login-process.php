@@ -12,7 +12,7 @@ $sql = "SELECT
 
 $result = mysqli_query($sql);
 if(!$result) {
-	ecoh 'Something went wrong while signing in. Please try again later';
+	echo "Something went wrong while signing in. Please try again later";
 }
 else {
 	$_SESSION['signed_in'] = true;
