@@ -10,12 +10,7 @@ $sql = "SELECT
 		AND
 			user_pass = sha1($_POST["passwordLogin"])";
 
-$result =$conn->query($sql);
-if(!$result) {
-	echo "Something went wrong while signing in. Please try again later";
-}
-else {
-	$_SESSION['signed_in'] = true;
-	$_SESSION['user_name'] = $_POST['email'];
+$conn->query($sql);
+
 	header("Location: https://ardvarklearning.net/forum.php")
-}
+	?>
