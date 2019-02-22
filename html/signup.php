@@ -69,7 +69,7 @@
 					<div class="row" style="padding-top: 10%; color: white" >
 						
 						<div class="col rounded" style="background-color: #323E78; padding-top: 5%">
-							<form method="post" action="server.php">
+							<form method="post" action="signupUser.php">
 								<!-- Display validation errors here -->
 								<div class="form-group">
 									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">

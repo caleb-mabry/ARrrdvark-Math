@@ -27,7 +27,8 @@ if (isset($_POST["signup"])) {
 	} else {
 		$termsAgree = '0';
 	}
-	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) VALUES ('$email','$firstName','$lastName','$password','$emailAgree','$termsAgree')";
+	$sql = "INSERT INTO users (email, firstName, lastName, password, receiveEmail, termsAgree) 
+	VALUES ('$email','$firstName','$lastName',sha1('$password'),'$emailAgree','$termsAgree')";
 
 	$conn->query($sql);
 
