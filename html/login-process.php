@@ -1,27 +1,21 @@
 <?php
 include('db-connect.php');
-session_start();
-if (isset($_POST["loginSubmit"])) {
-	$sql = "SELECT email, password 
-	FROM users 
-	WHERE email = '$emailLogin' 
-	AND password = '$passwordLogin'";
 
-	 $myusername = mysqli_real_escape_string($db,$_POST['emailLogin']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['passwordLogin']); 
+$sql = "SELECT
+			email
+		FROM
+			users
+		WHERE
+			email = mysqli_real_escape_string($_POST['emailLogin'])
+		AND
+			user_pass = sha1($_POST['user_pass'])";
 
-	$result = mysqli_query($db,$sql);
-	$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-	$active = $row['active'];
-
-	$count = mysqli_num_rows($result);
-	if($count == 1) {
-		session_register("myusername");
-		$_SESSION['login_user'] = $myusername;
-
-		header("location: login.php");
-	}else {
-		$error = "Your Login Name or Password is invalid";
-	}
+$result = $conn ->query($sql);
+if(!$result) {
+	ecoh 'Something went wrong while signing in. Please try again later';
 }
-?>
+else {
+	$_SESSION['signed_in'] = true;
+	$_SESSION['user_name'] = $_POST['email'];
+	header(Location: /forum.html)
+}

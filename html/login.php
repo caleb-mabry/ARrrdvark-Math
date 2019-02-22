@@ -1,5 +1,11 @@
 <?php
-   session_start();
+   if(isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true) 
+   {
+   	echo 'This user is already signed in';
+   }
+   else {
+   	echo 'nuttt';
+   }
 ?>
 
 <!DOCTYPE html>
