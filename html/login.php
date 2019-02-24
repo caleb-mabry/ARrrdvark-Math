@@ -68,6 +68,7 @@
 		and loginPassword='".sha1($password)."'";
 		$result = mysqli_query($conn,$query) or die(mysql_error());
 		$rows = mysqli_num_rows($result);
+		echo "password is incorrect";
 		if($rows==1){
 			$_SESSION['loginEmail'] = $username;
             // Redirect user to index.php
