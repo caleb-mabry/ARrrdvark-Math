@@ -62,7 +62,7 @@
 			</div>
 			<div class="col-4 rounded" style="background-color: #323E78; padding-top: 3%;">
 
-				<form>
+				<form action="login-process.php" method="post" name="loginSubmit">
 					<div class="form-group">
 						<input type="email" class="form-control" name="loginEmail" placeholder="Enter email">
 					</div>
