@@ -54,7 +54,7 @@
 	include('db-connect.php');
 	session_start();
 // If form submitted, insert values into the database.
-	if (isset($_POST['loginEmail'])){
+	if (isset($_POST['submitButton'])){
         // removes backslashes
 		$username = stripslashes($_REQUEST['loginEmail']);
         //escapes special characters in a string
@@ -73,6 +73,7 @@
 			$_SESSION['loginEmail'] = $username;
             // Redirect user to index.php
 			header("Location: index.html");
+			echo "pass";
 		}
 		else{
 			echo "password is incorrect";
@@ -100,7 +101,7 @@
 						<div class="form-group">
 							<input type="password" class="form-control" name="loginPassword" placeholder="Enter Password">
 						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary" name="submitButton">Submit</button>
 					</form>
 					<br>
 				</div>
