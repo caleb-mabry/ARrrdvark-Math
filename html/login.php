@@ -66,7 +66,7 @@
 		FROM `users` 
 		WHERE loginEmail='$username'
 		and loginPassword='".sha1($password)."'";
-		$result = mysqli_query($con,$query) or die(mysql_error());
+		$result = mysqli_query($conn,$query) or die(mysql_error());
 		$rows = mysqli_num_rows($result);
 		if($rows==1){
 			$_SESSION['loginEmail'] = $username;
@@ -76,7 +76,7 @@
 		else{
 			echo "password is incorrect";
 		}
-		
+
 	}else{
 
 	}
