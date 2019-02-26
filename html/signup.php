@@ -52,7 +52,7 @@
 <body class="moving-backgrounds">
 	<div id="particles-js"></div>
 	<div class="container-fluid">
-		<span class="text-center1 text-center" style="color: white;"><h1 style="font-family: vanillaregular">Your Learning Experience Starts <b>NOW</b></h1></span>
+		<span class="text-center1 text-center" style="color: white;"><h2 style="font-family: vanillaregular">Your Learning Experience Starts <b>NOW</b></h2></span>
 		<div class="container-fluid container">
 			<div class="row">
 				<div class="col-sm">
