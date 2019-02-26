@@ -86,7 +86,7 @@
 		?>
 		<div id="particles-js"></div>
 		<div class="container-fluid text-center" style="font-family: vanillaregular; color: white; padding-top: 5%;">
-			<h1>Login</h1>
+			<h1 style="font-family: vanillaregular">Login</h1>
 			<br>
 			<div class="row text-center">
 				<div class="col-4">

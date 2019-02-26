@@ -11,14 +11,6 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<style type="text/css">
-	@font-face {
-		font-family: vanillaregular;
-		src: url(Vanilla-webfont.woff);
-	}
-
-	h1, a{
-		font-family:vanillaregular;
-	}
 </style>
 
 <title>ARdvark Learning | Sign Up</title>
@@ -60,7 +52,7 @@
 <body class="moving-backgrounds">
 	<div id="particles-js"></div>
 	<div class="container-fluid">
-		<span class="text-center1 text-center" style="color: white;"><h1>Your Learning Experience Starts <b>NOW</b></h1></span>
+		<span class="text-center1 text-center" style="color: white;"><h1 style="font-family: vanillaregular">Your Learning Experience Starts <b>NOW</b></h1></span>
 		<div class="container-fluid container">
 			<div class="row">
 				<div class="col-sm">
