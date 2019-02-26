@@ -50,41 +50,6 @@
 	</div>
 </nav>
 <body class="moving-backgrounds">
-	<?php
-	include('db-connect.php');
-	session_start();
-// If form submitted, insert values into the database.
-	if (isset($_POST['submitButton'])){
-        // removes backslashes
-		$username = stripslashes($_REQUEST['loginEmail']);
-        //escapes special characters in a string
-		$username = mysqli_real_escape_string($conn,$username);
-		$password = stripslashes($_REQUEST['loginPassword']);
-		$password = mysqli_real_escape_string($conn,$password);
-	//Checking is user existing in the database or not
-		$query = "SELECT *
-		FROM `users` 
-		WHERE loginEmail='$username'
-		and loginPassword='".sha1($password)."'";
-		$result = mysqli_query($conn,$query) or die(mysql_error());
-		$rows = mysqli_num_rows($result);
-		echo "password is incorrect";
-		if($rows==1){
-			$_SESSION['loginEmail'] = $username;
-            // Redirect user to index.php
-			header("Location: index.html");
-			echo "pass";
-		}
-		else{
-			echo "password is incorrect";
-			header("Location: index.html");
-		}
-
-	}else{
-		echo $_SESSION["loginEmail"];
-
-	}
-		?>
 		<div id="particles-js"></div>
 		<div class="container-fluid text-center" style="font-family: vanillaregular; color: white; padding-top: 5%;">
 			<h2 style="font-family: vanillaregular;">Login</h2>
@@ -95,7 +60,7 @@
 				</div>
 				<div class="col-4 rounded" style="background-color: #323E78; padding-top: 3%;">
 
-					<form action="login.php" method="post" name="loginSubmit">
+					<form action="login-process.php" method="post" name="loginSubmit">
 						<div class="form-group">
 							<input type="email" class="form-control" name="loginEmail" placeholder="Enter email">
 						</div>
