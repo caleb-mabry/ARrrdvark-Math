@@ -1,7 +1,38 @@
-  @font-face {
+@font-face {
     font-family: vanillaregular;
     src: url(Vanilla-webfont.woff);
-  }
+}
+@font-face{
+    font-family: eraserregular;
+    src: url(EraserRegular-webfont.woff);
+}
+@font-face {
+    font-family: 'Arvo';
+    src: url(Arvo-Regular.ttf);
+}
+nav {
+  font-family: vanillaregular;   
+}
+#landingPageBackground {
+  background-image: url(chalkboardBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.formattingAboutDescText {
+  font-family: Arvo;
+  background-color: #afb63e;
+  color: white;
+  padding-top: %
+
+}
+#paddingTop50 {
+  padding-top: 15%;
+}
+h1 {
+  font-family: eraserregular;
+  color: white;
+  font-size: 5em;
+}
 
 /* navbar item spacing */
 .navbar-nav > li{
@@ -19,11 +50,6 @@
 	background-color: #77878B;
 }
 
-/* Standardizing the font size for the brand name in the navbar */
-.navbar-brand{
-	font-size: 25px;
-	color: #151231;
-}
 
 /* centering the word "ARrrdvark" on the home(index.html) page */
 .center{
@@ -109,15 +135,6 @@ label {
 	font-family: vanillaregular;
 	color: #eee;
 	margin-left: center;
-}
-
-
-/* Overriding bootstrap container fluid to ensure mobile version works */
-.container-fluid {
-padding-left: 0;
-padding-right: 0;
-margin-left: auto;
-margin-right: auto;
 }
 
 .sidebar-link{
@@ -239,9 +256,6 @@ margin-right: auto;
       padding: 0px 10px;
       }
 
-    .main p{
-      font-family: 'Arvo';
-    }
 
     .navbar a:hover{
       background-color: rgba(53, 164, 255, 0.6);
