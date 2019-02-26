@@ -77,10 +77,12 @@
 		}
 		else{
 			echo "password is incorrect";
+			header("Location: index.html");
 		}
 
 	}else{
 		echo $_SESSION["loginEmail"];
+		header("Location: index.html");
 
 	}
 		?>
