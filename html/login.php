@@ -57,11 +57,11 @@
 // If form submitted, insert values into the database.
 	if (isset($_POST['submitButton'])){
         // removes backslashes
-		$username = stripslashes($_REQUEST['loginEmail']);
+		$username = stripslashes($_POST['loginEmail']);
+		$password = stripslashes($_POST['loginPassword']);
         //escapes special characters in a string
-		$username = mysqli_real_escape_string($conn,$username);
-		$password = stripslashes($_REQUEST['loginPassword']);
-		$password = mysqli_real_escape_string($conn,$password);
+		$username = mysqli_real_escape_string($username);	
+		$password = mysqli_real_escape_string($password);
 	//Checking is user existing in the database or not
 		$query = "SELECT *
 		FROM `users` 
