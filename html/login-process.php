@@ -29,7 +29,7 @@
         }
 
     }else{
-        echo $_SESSION["loginEmail"];
+        echo $_SESSION['loginEmail'];
 
     }
         ?>
