@@ -80,7 +80,7 @@
 		}
 
 	}else{
-		echo "Lol";
+		echo $_SESSION["loginEmail"];
 
 	}
 		?>
