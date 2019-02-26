@@ -82,7 +82,6 @@
 
 	}else{
 		echo $_SESSION["loginEmail"];
-		header("Location: index.html");
 
 	}
 		?>
