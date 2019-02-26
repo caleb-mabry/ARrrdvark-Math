@@ -20,12 +20,12 @@
         if($rows==1){
             $_SESSION['loginEmail'] = $username;
             // Redirect user to index.php
-            header("Location: index.html");
+            header("Location: https://ardvarklearning.net/forum.php");
             echo "pass";
         }
         else{
             echo "password is incorrect";
-            header("Location: index.html");
+            header("Location: https://ardvarklearning.net/forum.php");
         }
 
     }else{

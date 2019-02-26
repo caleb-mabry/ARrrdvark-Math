@@ -1,3 +1,7 @@
+<?php
+	include('db-connect.php');
+	session_start();
+	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,8 +54,6 @@
 	</div>
 </nav>
 <?php
-	include('db-connect.php');
-	session_start();
 // If form submitted, insert values into the database.
 	if (isset($_POST['submitButton'])){
         // removes backslashes
@@ -71,15 +73,15 @@
 		if($rows==1){
 			$_SESSION['loginEmail'] = $username;
             // Redirect user to index.php
-			header("Location: index.html");
+			header("Location: https://ardvarklearning.net/forum.php");
 		}
 		else{
 			echo "password is incorrect";
-			header("Location: index.html");
+			header("Location: https://ardvarklearning.net/forum.php");
 		}
 
 	}else{
-		echo $_SESSION["loginEmail"];
+		print_r($_SESSION);
 
 	}
 		?>
