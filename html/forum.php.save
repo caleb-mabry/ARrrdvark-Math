@@ -1,5 +1,6 @@
 <?php
 session_start();
+echo
 ?>
 
 <!DOCTYPE html>
@@ -64,9 +65,8 @@ session_start();
 	</div>
 </nav>
 <body class="moving-backgrounds">
-<?php
-var_dump($_SESSION);
-?>
+  <div id="particles-js"></div>
+
 
 
 

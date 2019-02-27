@@ -1,6 +1,8 @@
 <?php
+
 	include('db-connect.php');
 	session_start();
+ini_set('display_errors', 1);
 // If form submitted, insert values into the database.
 	if (isset($_POST['submitButton'])){
         // removes backslashes
@@ -14,7 +16,7 @@
 		FROM `users` 
 		WHERE loginEmail='$username'
 		and loginPassword='".sha1($password)."'";
-		$result = mysqli_query($conn,$query) or die(mysql_error());
+		$result = mysqli_query($conn,$query);
 		$rows = mysqli_num_rows($result);
 		echo "password is incorrect";
 		if($rows==1){
