@@ -15,10 +15,9 @@ ini_set('display_errors', 1);
 		$query = "SELECT *
 		FROM `users` 
 		WHERE loginEmail='$username'
-		and loginPassword='".sha1($password)."'";
+		and loginPassword='$password)'";
 		$result = mysqli_query($conn,$query);
 		$rows = mysqli_num_rows($result);
-		echo "password is incorrect";
 		if($rows==1){
 			$_SESSION['loginEmail'] = $username;
             // Redirect user to index.php
