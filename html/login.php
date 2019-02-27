@@ -25,7 +25,6 @@ ini_set('display_errors', 1);
 		}
 		else{
 			echo "password is incorrect";
-			header("Location: https://ardvarklearning.net/forum.php");
 		}
 
 	}else{
