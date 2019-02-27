@@ -50,7 +50,7 @@ session_start();
 				<a class="nav-link" href="howto.html">How To</a>
 			</li>
 			<li class ="nav-item active">
-				<a class="nav-link" href="forum.html">Forum</a>
+				<a class="nav-link" href="forum.php">Forum</a>
 			</li>
 		</ul>
 		<ul class="navbar-nav mr-right">
