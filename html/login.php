@@ -1,7 +1,6 @@
 <?php
-
-	include('db-connect.php');
-	session_start();
+include('db-connect.php');
+session_start();
 ini_set('display_errors', 1);
 // If form submitted, insert values into the database.
 	if (isset($_POST['submitButton'])){

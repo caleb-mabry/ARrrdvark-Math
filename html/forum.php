@@ -1,5 +1,13 @@
 <?php
+include('db-connect.php');
 session_start();
+
+if(isset($_SESSION['loginEmail'])) {
+  $query = "SELECT firstName,lastName 
+  FROM 'users'
+  WHERE email = '$_SESSION['loginEmail']";
+}
+echo "Welcome ".$row["firstName"].$row["lastName"];
 ?>
 
 <!DOCTYPE html>
@@ -15,16 +23,7 @@ session_start();
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<style type="text/css">
-	@font-face {
-		font-family: vanillaregular;
-		src: url(Vanilla-webfont.woff);
-	}
 
-	h1, a{
-		font-family:vanillaregular;
-	}
-</style>
 
 <title>ARdvark Learning | Forum</title>
 
@@ -63,7 +62,14 @@ session_start();
 		</ul>
 	</div>
 </nav>
-<body class="moving-backgrounds">
+<body>
+    <div id="particles-js"></div>
+    <div class="row">
+      <div class="col text-center">
+
+      </div>
+    </div>
+
 <?php
 var_dump($_SESSION);
 ?>
