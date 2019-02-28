@@ -7,6 +7,7 @@ if(isset($_SESSION['loginEmail'])) {
   FROM 'users'
   WHERE email = '$_SESSION['loginEmail']";
   $result = mysqli_query($conn,$query);
+  $row=$result->fetch_assoc()
   echo "Welcome ".$row["firstName"].$row["lastName"];
 }
 
