@@ -1,13 +1,18 @@
 <?php
 include('db-connect.php');
 session_start();
-
+ini_set('display_errors', 1);
 if(isset($_SESSION['loginEmail'])) {
   $query = "SELECT firstName,lastName 
   FROM 'users'
   WHERE email = '$_SESSION['loginEmail']";
+  $result = mysqli_query($conn,$query);
+  echo "Welcome ".$row["firstName"].$row["lastName"];
 }
-echo "Welcome ".$row["firstName"].$row["lastName"];
+
+else {
+
+}
 ?>
 
 <!DOCTYPE html>
