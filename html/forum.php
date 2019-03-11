@@ -4,11 +4,12 @@ session_start();
 ini_set('display_errors', 1);
 if(isset($_SESSION['loginEmail'])) {
   $query = "SELECT firstName,lastName 
-  FROM 'users'
-  WHERE email = '$_SESSION['loginEmail']";
+  FROM users
+  WHERE email = '{$_SESSION['loginEmail']}'";
   $result = mysqli_query($conn,$query);
-  $row=$result->fetch_assoc()
+  while($row=$result->fetch_assoc()) {
   echo "Welcome ".$row["firstName"].$row["lastName"];
+}
 }
 
 else {
