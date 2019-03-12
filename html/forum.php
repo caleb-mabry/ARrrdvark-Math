@@ -69,22 +69,11 @@ else {
 		</ul>
 	</div>
 </nav>
-<?php
-
-  <body>
-    <div id="particles-js"></div>
-      <div class="row">
-        <div class="col text-center">
-                <h1> Please sign in before you view the forum </h1>
-         </div>
-      </div>
-    </body>
-?>
     <body>
     <div id="particles-js"></div>
       <div class="row">
         <div class="col text-center">
-        <h1> Please sign in before you view the forum </h1>
+        <h1> You are logged in </h1>
       </div>
 
 
