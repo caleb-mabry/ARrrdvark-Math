@@ -61,7 +61,11 @@ else {
 		</ul>
 		<ul class="navbar-nav mr-right">
 			<li class="nav-item">
+        <?php if(!isset($_SESSION['loginEmail'])): ?>
 				<a class="nav-link" href="login.php">Login</a>
+        <?php else: ?>
+          <a class="nav-link" href="logout.php">Login</a>
+        <?php endif ?>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="signup.php">Sign Up</a>
