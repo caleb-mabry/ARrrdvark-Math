@@ -69,31 +69,14 @@ else {
 		</ul>
 	</div>
 </nav>
-  <?php 
-  if(!isset($_SESSION['loginEmail'])) {
-    echo "
+
     <body>
     <div id="particles-js"></div>
       <div class="row">
         <div class="col text-center">
         <h1> Please sign in before you view the forum </h1>
       </div>
-    </div>
-    </body>";
-  }
-  else {
-  <body>
-
-    <div id="particles-js"></div>
-    <div class="row">
-      <div class="col text-center">
-
-      </div>
-    </div>
-    </body>
-  }
-  ?>
-<body>
+      
 
 
 
