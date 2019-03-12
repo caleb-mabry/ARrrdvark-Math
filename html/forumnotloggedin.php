@@ -1,22 +1,3 @@
-<?php
-include('db-connect.php');
-session_start();
-ini_set('display_errors', 1);
-if(isset($_SESSION['loginEmail'])) {
-  $query = "SELECT firstName,lastName 
-  FROM users
-  WHERE email = '{$_SESSION['loginEmail']}'";
-  $result = mysqli_query($conn,$query);
-  while($row=$result->fetch_assoc()) {
-  echo "Welcome ".$row["firstName"].$row["lastName"];
-}
-}
-
-else {
-    header("Location: https://ardvarklearning.net/forumnotloggedin.php");
-}
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,22 +50,11 @@ else {
 		</ul>
 	</div>
 </nav>
-<?php
-
-  <body>
+   <body>
     <div id="particles-js"></div>
       <div class="row">
         <div class="col text-center">
-                <h1> Please sign in before you view the forum </h1>
-         </div>
-      </div>
-    </body>
-?>
-    <body>
-    <div id="particles-js"></div>
-      <div class="row">
-        <div class="col text-center">
-        <h1> Please sign in before you view the forum </h1>
+        <h1> Please sign in or register before you view the forum </h1>
       </div>
 
 
