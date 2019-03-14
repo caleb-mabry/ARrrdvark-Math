@@ -64,7 +64,7 @@ else {
         <?php if(!isset($_SESSION['loginEmail'])): ?>
 				<a class="nav-link" href="login.php">Login</a>
         <?php else: ?>
-          <a class="nav-link" href="logout.php">Login</a>
+          <a class="nav-link" href="logout.php">Logout</a>
         <?php endif ?>
 			</li>
 			<li class="nav-item">

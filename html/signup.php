@@ -72,7 +72,7 @@
 								<div class="form-group">
 									<input type="text" class="form-control" name="lastName" aria-describedby="lastName" placeholder="Last Name">
 								</div>
-								<div class="form-group">
+								<div class="form-group form-check">
 									<input type="password" class="form-control" name="password" aria-describedby="password" placeholder="Password">
 								</div>
 								<div class="form-check">
