@@ -1,13 +1,10 @@
 <?php
-include('db-connect.php');
-session_start();
-ini_set('display_errors', 1);
-if(isset($_SESSION['loginEmail'])) {
 $title = "Forum";
-include "header.php";
-else {
-    header("Location: https://ardvarklearning.net/forumnotloggedin.php");
-}
+include ('header.php');
+include('db-connect.php');
+
+
+session_start();
 ?>
     <body>
     <div id="particles-js"></div>
