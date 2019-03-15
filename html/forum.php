@@ -2,9 +2,13 @@
 $title = "Forum";
 include ('header.php');
 include('db-connect.php');
-
-
 session_start();
+if (!isset($_SESSION['loginEmail'])) {
+  header("Location: https://ardvarklearning.net/forumnotloggedin.php")
+}
+else {
+  
+}
 ?>
     <body>
     <div id="particles-js"></div>
