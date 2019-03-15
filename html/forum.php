@@ -2,9 +2,8 @@
 
 $title = "Forum";
 session_start();
-ini_set('display_errors', 1);
 if (!isset($_SESSION['loginEmail'])) {
-  header("Location: https://ardvarklearning.net/forumnotloggedin.php")
+  header("Location: https://ardvarklearning.net/forumnotloggedin.php");
 }
 else {
 include ('header.php');
