@@ -6,7 +6,7 @@ include 'header.php';
 	<div id="particles-js"></div>
 	<div class="container-fluid">
 		<span class="text-center1 text-center" style="color: white;"><h2 style="font-family: vanillaregular">Your Learning Experience Starts <b>NOW</b></h2></span>
-		<div class="container-fluid container">
+		<div class="container-fluid" style="font-family: vanillaregular;"style="font-family: vanillaregular;> 
 			<div class="row">
 				<div class="col-sm">
 				</div>
@@ -25,11 +25,11 @@ include 'header.php';
 								<div class="form-group">
 									<input type="text" class="form-control" name="lastName" aria-describedby="lastName" placeholder="Last Name" required="required">
 								</div>
-								<div class="form-group form-check">
+								<div class="form-group">
 									<input type="password" class="form-control" name="password" aria-describedby="password" placeholder="Password" required="required">
 								</div>
 								<div class="form-check">
-									<input class="form-check-input" type="checkbox" name="emailAgree" value="" id="defaultCheck1" required="required">
+									<input class="form-check-input" type="checkbox" name="emailAgree" value="" id="defaultCheck1">
 									<label class="form-check-label" for="defaultCheck1">
 										I <b>want</b> to recieve e-mails regarding updates or new products
 									</label>
