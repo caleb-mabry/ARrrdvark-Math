@@ -6,7 +6,7 @@ include 'header.php';
 	<div id="particles-js"></div>
 	<div class="container-fluid">
 		<span class="text-center1 text-center" style="color: white;"><h2 style="font-family: vanillaregular">Your Learning Experience Starts <b>NOW</b></h2></span>
-		<div class="container-fluid" style="font-family: vanillaregular;"style="font-family: vanillaregular;> 
+		<div class="container-fluid container" style="font-family: vanillaregular;"> 
 			<div class="row">
 				<div class="col-sm">
 				</div>
