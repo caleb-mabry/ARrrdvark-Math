@@ -37,7 +37,7 @@
 			<li class="nav-item">
 				<a class="nav-link" href="howto.html">How To</a>
 			</li>
-			<li class ="nav-item active">
+			<li class ="nav-item">
 				<a class="nav-link" href="forum.php">Forum</a>
 			</li>
 		</ul>
