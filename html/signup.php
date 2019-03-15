@@ -17,25 +17,25 @@ include 'header.php';
 							<form method="post" action="signupUser.php">
 								<!-- Display validation errors here -->
 								<div class="form-group">
-									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email">
+									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required="required">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control"  name="firstName" aria-describedby="firstName" placeholder="First Name">
+									<input type="text" class="form-control"  name="firstName" aria-describedby="firstName" placeholder="First Name" required="required">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" name="lastName" aria-describedby="lastName" placeholder="Last Name">
+									<input type="text" class="form-control" name="lastName" aria-describedby="lastName" placeholder="Last Name" required="required">
 								</div>
 								<div class="form-group form-check">
-									<input type="password" class="form-control" name="password" aria-describedby="password" placeholder="Password">
+									<input type="password" class="form-control" name="password" aria-describedby="password" placeholder="Password" required="required">
 								</div>
 								<div class="form-check">
-									<input class="form-check-input" type="checkbox" name="emailAgree" value="" id="defaultCheck1">
+									<input class="form-check-input" type="checkbox" name="emailAgree" value="" id="defaultCheck1" required="required">
 									<label class="form-check-label" for="defaultCheck1">
 										I <b>want</b> to recieve e-mails regarding updates or new products
 									</label>
 								</div>
 								<div class="form-check">
-									<input class="form-check-input" type="checkbox" name="termsAgree" value="" id="defaultCheck1">
+									<input class="form-check-input" type="checkbox" name="termsAgree" value="" id="defaultCheck1" required="required">
 									<label class="form-check-label" for="defaultCheck1">
 										I Agree to the 
 										<!-- Button trigger modal -->
@@ -60,7 +60,7 @@ include 'header.php';
 														<p>Last updated: February 11, 2019</p>
 
 
-														<p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the http://ardvarklearning.net/ website (the "Service") operated by Ardvark Learning ("us", "we", or "our").</p>
+														<p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the https://ardvarklearning.net/ website (the "Service") operated by Ardvark Learning ("us", "we", or "our").</p>
 
 														<p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
 
