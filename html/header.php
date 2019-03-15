@@ -29,13 +29,13 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="about.html">About</a>
+				<a class="nav-link" href="about.php">About</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="howto.html">How To</a>
+				<a class="nav-link" href="howto.php">How To</a>
 			</li>
 			<li class ="nav-item">
 				<a class="nav-link" href="forum.php">Forum</a>
