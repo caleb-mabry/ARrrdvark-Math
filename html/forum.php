@@ -1,13 +1,13 @@
 <?php
 $title = "Forum";
-include ('header.php');
-include('db-connect.php');
 session_start();
+ini_set('display_errors', 1);
 if (!isset($_SESSION['loginEmail'])) {
+  include ('header.php');
   header("Location: https://ardvarklearning.net/forumnotloggedin.php")
 }
 else {
-  
+include ('header.php');
 }
 ?>
     <body>
