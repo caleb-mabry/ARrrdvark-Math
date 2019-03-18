@@ -6,7 +6,7 @@ include 'header.php';
 	<div id="particles-js"></div>
 	<div class="container-fluid">
 		<span class="text-center1 text-center" style="color: white;"><h2 style="font-family: vanillaregular">Your Learning Experience Starts <b>NOW</b></h2></span>
-		<div class="container-fluid container" style="font-family: vanillaregular;"> 
+		<div class="container-fluid container" style="font-family: vanillaregular; padding-top: 5%;"> 
 			<div class="row">
 				<div class="col-sm">
 				</div>
@@ -34,6 +34,7 @@ include 'header.php';
 										I <b>want</b> to recieve e-mails regarding updates or new products
 									</label>
 								</div>
+								<br>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" name="termsAgree" value="" id="defaultCheck1" required="required">
 									<label class="form-check-label" for="defaultCheck1">

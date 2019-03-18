@@ -13,7 +13,8 @@ include ('header.php');
     <div id="particles-js"></div>
       <div class="row">
         <div class="col text-center">
-        <h1> You are logged in </h1>
+        <h1> Welcome to the Forum! </h1>
+        <h3> Something wrong? Just curious? Ask! </h3>
       </div>
 
 
