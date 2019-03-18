@@ -14,7 +14,7 @@ else {
   <div class="row">
     <div class="col text-center">
       <h1> Welcome to the Forum! </h1>
-      <h3> Something wrong? Just curious? Ask! </h3>
+      <h3 style="color:white"> Something wrong? Just curious? Ask! </h3><br>
       <a href="createtopic.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create a Question</a>
     </div>
   </div>
