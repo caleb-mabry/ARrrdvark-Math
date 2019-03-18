@@ -1,7 +1,7 @@
-<?php 
+<?php
+session_start();
 $title = "Home";
 include('header.php');
-session_start();
 ?>
 <body id="landingPageBackground">
 	<div class="container-fluid" >
