@@ -11,16 +11,16 @@ include ('header.php');
 			</div>
 			<div class="col-4 rounded" style="background-color: #323E78;">
 				<br>
-				<form>
+				<form method="post" action="createtopicaction.php">
 					<div class="form-group">
 						<label for="titleOfTopic">Topic Title</label>
-						<input type="text" class="form-control" id="titleOfTopic">
+						<input type="text" class="form-control" name="titleOfTopic">
 					</div>
 					<div class="form-group">
 						<label for="textOfTopic">What's going on?</label>
-						<textarea class="form-control id="textOfTopic" rows="3"></textarea>
+						<textarea class="form-control name="textOfTopic" rows="3"></textarea>
 					</div>
-					  <button type="submit" class="btn btn-primary">Submit</button>
+					  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 				</form>
 				<br>
 			</div>

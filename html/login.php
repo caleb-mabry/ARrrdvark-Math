@@ -12,7 +12,7 @@ ini_set('display_errors', 1);
 		$password = mysqli_real_escape_string($conn,$password);
 	//Checking is user existing in the database or not
 		$query = "SELECT *
-		FROM `users` 
+		FROM users 
 		WHERE email='$username'
 		and password='".sha1($password)."'";
 		$result = mysqli_query($conn,$query);

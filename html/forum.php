@@ -24,7 +24,8 @@ else {
     </div>
     <div class="col-8">
       <?php
-
+        $query ="SELECT post_id, post_content, post_title, post_by FROM posts";
+        $result = mysqli_connect($conn,$query)
       ?>
     </div>
     <div class="col-2">
