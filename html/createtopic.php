@@ -6,10 +6,11 @@ include ('header.php');
 <body>
 	<div id="particles-js"></div>
 	<div class="container">
-		<div class="row" style="padding-top: 10%">
+		<div class="row" style="padding-top: 10%; font-family: vanillaregular;">
 			<div class="col-4">
 			</div>
-			<div class="col-4" style="background-color: #323E78;>
+			<div class="col-4 rounded" style="background-color: #323E78;">
+				<br>
 				<form>
 					<div class="form-group">
 						<label for="titleOfTopic">Topic Title</label>
@@ -21,6 +22,7 @@ include ('header.php');
 					</div>
 					  <button type="submit" class="btn btn-primary">Submit</button>
 				</form>
+				<br>
 			</div>
 			<div class="col-3">
 			</div>
