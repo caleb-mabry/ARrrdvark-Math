@@ -4,36 +4,7 @@ include('db-connect.php');
 session_start();
 ini_set('display_errors', 1);
 include('header.php');
-// If form submitted, insert values into the database.
-	if (isset($_POST['submitButton'])){
-        // removes backslashes
-		$username = stripslashes($_POST['loginEmail']);
-		$password = stripslashes($_POST['loginPassword']);
-        //escapes special characters in a string
-		$username = mysqli_real_escape_string($conn,$username);	
-		$password = mysqli_real_escape_string($conn,$password);
-	//Checking is user existing in the database or not
-		$query = "SELECT *
-		FROM users 
-		WHERE email='$username'
-		and password='".sha1($password)."'";
-		$result = mysqli_query($conn,$query);
-		$rows = mysqli_num_rows($result);
-		if($rows==1){
-			$_SESSION['loginEmail'] = $username;
-            // Redirect user to forum.php
-			header("Location: https://ardvarklearning.net/forum.php");
-		}
-		else{
-			echo "Password is incorrect";
-		}
-
-	}else{
-		print_r($_SESSION);
-
-	}
-		?>
-
+?>
 <body class="moving-backgrounds">
 
 		<div id="particles-js"></div>
@@ -46,7 +17,7 @@ include('header.php');
 				</div>
 				<div class="col-4 rounded" style="background-color: #323E78; padding-top: 3%;">
 
-					<form action="login.php" method="post" name="loginSubmit">
+					<form action="login-process.php" method="post" name="loginSubmit">
 						<div class="form-group">
 							<input type="email" class="form-control" name="loginEmail" placeholder="Enter email">
 						</div>

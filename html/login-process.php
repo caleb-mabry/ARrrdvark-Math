@@ -1,35 +1,30 @@
-<?php
-    include('db-connect.php');
-    session_start();
+<?php include('db-connect.php');
 // If form submitted, insert values into the database.
     if (isset($_POST['submitButton'])){
         // removes backslashes
-        $username = stripslashes($_REQUEST['loginEmail']);
+        $username = stripslashes($_POST['loginEmail']);
+        $password = stripslashes($_POST['loginPassword']);
         //escapes special characters in a string
-        $username = mysqli_real_escape_string($conn,$username);
-        $password = stripslashes($_REQUEST['loginPassword']);
+        $username = mysqli_real_escape_string($conn,$username); 
         $password = mysqli_real_escape_string($conn,$password);
     //Checking is user existing in the database or not
         $query = "SELECT *
-        FROM `users` 
-        WHERE loginEmail='$username'
-        and loginPassword='".sha1($password)."'";
-        $result = mysqli_query($conn,$query) or die(mysql_error());
+        FROM users 
+        WHERE email='$username'
+        and password='".sha1($password)."'";
+        $result = mysqli_query($conn,$query);
         $rows = mysqli_num_rows($result);
-        echo "password is incorrect";
         if($rows==1){
             $_SESSION['loginEmail'] = $username;
-            // Redirect user to index.php
+            // Redirect user to forum.php
             header("Location: https://ardvarklearning.net/forum.php");
-            echo "pass";
         }
         else{
-            echo "password is incorrect";
-            header("Location: https://ardvarklearning.net/forum.php");
+            echo "Password is incorrect";
         }
 
     }else{
-        echo $_SESSION['loginEmail'];
+        print_r($_SESSION);
 
     }
         ?>
