@@ -1,5 +1,5 @@
 <?php
-
+include('db-connect.php');
 $title = "Forum";
 session_start();
 if (!isset($_SESSION['loginEmail'])) {
@@ -16,7 +16,7 @@ else {
       <h1> Welcome to the Forum! </h1>
       <h3 style="color:white"> Something wrong? Just curious? Ask! </h3><br>
       <a href="createtopic.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create a Question</a>
-    </div>
+</div>
   </div>
   <div class="row">
     <div class="col-2">
@@ -24,8 +24,46 @@ else {
     </div>
     <div class="col-8">
       <?php
-        $query ="SELECT post_id, post_content, post_title, post_by FROM posts";
-        $result = mysqli_connect($conn,$query)
+        $query ="SELECT * FROM posts";
+	$result = $conn->query($query);
+	if($result->num_rows > 0) {
+		while($row=$result->fetch_assoc()){
+//			echo "<table class='table'>";
+//			echo "<thead>";
+//			echo "<tr>";
+//			echo "<th scope='col'>Topic</th>";
+//			echo "<th scope='col'>Content</th>";
+//			echo "<th scope='col'>Author</th>";
+//			echo "</tr>";
+//			echo "</thead>";
+//			echo "<tbody>";
+//			echo "<tr>";
+//			echo "<th scope='row'>";
+//			echo $row['post_id'];
+//			echo"</th>";
+//			echo "<td>";
+//			echo $row['post_title'];
+//			echo "</td>";
+//			echo "<td>";
+//			echo $row['post_context'];
+//			echo "</td>";
+//			echo "<td>";
+//			echo $row['post_author'];
+//			echo "</td>";
+//			echo "</tr>";
+//			echo "</tbody>";
+///			echo "</table>";
+			echo "<br>";
+			echo "<div class='row' style='font-family: vanillaregular'>";
+			echo "<div class='col rounded' style='background-color:white'>";
+			echo "Topic: &nbsp" . $row['post_title'];
+			echo "<br><br>";
+			echo "What's happening: " .$row['post_content'];
+			echo "</div>";
+			echo "</div>";
+			echo "<br>";
+			}
+		}
       ?>
     </div>
     <div class="col-2">

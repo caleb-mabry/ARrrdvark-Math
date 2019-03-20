@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('dbconnect.php');
+include ('db-connect.php');
 include ('header.php');
 ?>
 <body>
@@ -18,7 +18,7 @@ include ('header.php');
 					</div>
 					<div class="form-group">
 						<label for="textOfTopic">What's going on?</label>
-						<textarea class="form-control name="textOfTopic" rows="3"></textarea>
+						<textarea class="form-control" name="textOfTopic" rows="3"></textarea>
 					</div>
 					  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 				</form>
