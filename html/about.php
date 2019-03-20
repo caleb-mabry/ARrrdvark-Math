@@ -49,7 +49,7 @@ include 'header.php';
 				<img src="CMPhoto.png" class="rounded img-fluid">
 				<br><br>
 				<h4>Caleb Mabry</h4> 
-				<h5>The lead lint</h5>
+				<h5>The lead lint COLLECTOR</h5>
 				<br>
 				<h5>
 					Caleb's favorite hobbies include: collecting belly button lint, timing the local bus routes, staring at Richmond's light polluted sky and kicking dirt on peoples shoes. When he isn't doing these things, he's most likely reading about how to become a better programmer and wheat penny enthusiast.

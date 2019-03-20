@@ -1,7 +1,9 @@
 <?php
+$title = "Login";
 include('db-connect.php');
 session_start();
 ini_set('display_errors', 1);
+include('header.php');
 // If form submitted, insert values into the database.
 	if (isset($_POST['submitButton'])){
         // removes backslashes
@@ -19,11 +21,11 @@ ini_set('display_errors', 1);
 		$rows = mysqli_num_rows($result);
 		if($rows==1){
 			$_SESSION['loginEmail'] = $username;
-            // Redirect user to index.php
+            // Redirect user to forum.php
 			header("Location: https://ardvarklearning.net/forum.php");
 		}
 		else{
-			echo "password is incorrect";
+			echo "Password is incorrect";
 		}
 
 	}else{
@@ -31,56 +33,7 @@ ini_set('display_errors', 1);
 
 	}
 		?>
-<html>
-<head>
 
-	<!-- script for the moving background -->
-	<script type="text/javascript" src="particles.js"></script>
-
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-	<!-- Link to our stylesheet DO NOT MOVE -->
-	<link rel="stylesheet" href="stylesheet.css">
-
-	<title>ARdvark Learning | Login</title>
-</head>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-	<a class="navbar-brand" href="index.html">ARdvark Learning</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="about.html">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="howto.html">How To</a>
-			</li>
-			<li class ="nav-item">
-				<a class="nav-link" href="forum.php">Forum</a>
-			</li>
-		</ul>
-		<ul class="navbar-nav mr-right">
-			<li class="nav-item active">
-				<a class="nav-link" href="login.php">Login</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="signup.php">Sign Up</a>
-			</li>
-		</ul>
-	</div>
-</nav>
 <body class="moving-backgrounds">
 
 		<div id="particles-js"></div>
