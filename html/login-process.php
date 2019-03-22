@@ -1,4 +1,5 @@
 <?php include('db-connect.php');
+session_start();
 // If form submitted, insert values into the database.
     if (isset($_POST['submitButton'])){
         // removes backslashes

@@ -49,7 +49,9 @@ h1 {
 .navbar-default {
 	background-color: #77878B;
 }
-
+.attach-to-right-side {
+	text-align: right;
+}
 
 /* centering the word "ARrrdvark" on the home(index.html) page */
 .center{
