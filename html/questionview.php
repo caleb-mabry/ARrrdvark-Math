@@ -15,6 +15,7 @@ include('header.php');
 		$id = $_GET['id'];
 		$query = "SELECT * FROM posts WHERE post_id=$id";
 		$result = $conn->query($query);
+		//This is the main post
 		if ($row=$result->fetch_assoc()) {
 			echo "<div class='row' style='font-family: vanillaregular'>";
 			echo "<div class='col rounded' style='background-color:white'>";
@@ -22,14 +23,27 @@ include('header.php');
 			echo "<br><br>";
 			echo "What's happening: " .$row['post_content'];
 			echo "<div class='text-right'>";
-			echo "Reply | <a href='delete.php?id=$id'>Delete</a>";
+			echo "<a href='reply.php?id=$id'>Reply</a> | <a href='delete.php?id=$id'>Delete</a>";
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
 			echo "<br></a>";
-			}
-else { echo "no";
-}
+		}
+		$query1 ="SELECT * FROM reply WHERE post_id=$id";
+                $result = $conn->query($query1);
+                while ($row=$result->fetch_assoc()) {
+                        echo "<div class='row' style='font-family: vanillaregular'>";
+                        echo "<div class='col rounded' style='background-color:white'>";
+                        echo "<br><br>";
+                        echo "What's happening: " .$row['reply_content'];
+                        echo "<div class='text-right'>";
+                        echo "Reply | <a href='delete.php?id=$id'>Delete</a>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "<br></a>";
+                        }
+
 ?>
 	</div>
 	<div class="col-2">
