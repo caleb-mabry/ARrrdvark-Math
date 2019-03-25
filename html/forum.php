@@ -37,7 +37,7 @@ else {
 			echo "<br><br>";
 			echo "What's happening: " .$row['post_content'];
 			echo "<div class='text-right'>";
-			echo "<a href='questionview.php?id=$id'>View</a> | Reply | <a href='delete.php?id=$id'>Delete</a>";
+			echo "<a href='questionview.php?id=$id'>View</a> | <a href='reply.php?id=$id'>Reply</a> | <a href='delete.php?id=$id'>Delete</a>";
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
