@@ -1,5 +1,6 @@
 <?php
 include('db-connect.php');
+session_start();
 $reply_content = $_POST['replyToTopic'];
 $reply_by = $_SESSION['loginEmail'];
 $post_id = $_GET['id'];

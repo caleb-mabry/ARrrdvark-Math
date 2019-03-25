@@ -3,7 +3,7 @@ session_start();
 $title = "Reply";
 include('db-connect.php');
 include('header.php');
-$id = $_GET('id');
+$id = $_GET['id'];
 ?>
 
 <body>
@@ -14,7 +14,8 @@ $id = $_GET('id');
 			</div>
 			<div class="col-4 rounded" style="background-color: #323E78;">
 				<br>
-				<form method="post" action="replyaction.php?id=$id">
+				<?php echo "<form method='post' action='replyaction.php?id=$id'>";
+?>
 					<div class="form-group">
 						<label for="replyToTopic">What's going on?</label>
 						<textarea class="form-control" name="replyToTopic" rows="3"></textarea>
