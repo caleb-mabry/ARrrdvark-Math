@@ -6,6 +6,7 @@ include('header.php');
 
 ?>
 <body>
+	  <div id="particles-js"></div>
 <div class="row">
 	<div class="particles-js"></div>
 	<div class="col-2">
@@ -16,8 +17,19 @@ include('header.php');
 		$query = "SELECT * FROM posts WHERE post_id=$id";
 		$result = $conn->query($query);
 		if ($row=$result->fetch_assoc()) {
-		echo "Welcome " . $row['post_content'] . "<br>";
-		echo "What's going on" . $row['post_title'];
+			echo "<a href='questionview.php?id=$id><br>";
+			echo "<div class='row' style='font-family: vanillaregular'>";
+			echo "<div class='col rounded' style='background-color:white'>";
+			echo "Topic: &nbsp" . $row['post_title'];
+			echo "<br><br>";
+			echo "What's happening: " .$row['post_content'];
+			echo "<div class='text-right'>";
+			echo "View | Reply | Delete";
+			echo "</div>";
+			echo "</div>";
+			echo "</div>";
+			echo "<br></a>";
+			}
 		} 
 else { echo "no";
 }
