@@ -22,13 +22,12 @@ include('header.php');
 			echo "<br><br>";
 			echo "What's happening: " .$row['post_content'];
 			echo "<div class='text-right'>";
-			echo "Reply | Delete";
+			echo "Reply | <a href='delete.php?id=$id'>Delete</a>";
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
 			echo "<br></a>";
 			}
-	
 else { echo "no";
 }
 ?>
@@ -36,7 +35,6 @@ else { echo "no";
 	<div class="col-2">
 	</div>
 </div>
-	
 	    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -45,15 +43,15 @@ else { echo "no";
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
-    <script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
       particlesJS("particles-js", {
         particles: {
           number: { value: 110, density: { enable: true, value_area: 800 } },
           color: { value: "#afb63e" },
           shape: {
             type: "star",
-            stroke: { width: 0, color: "#000000" },
+           stroke: { width: 0, color: "#000000" },
             polygon: { nb_sides: 5 },
             image: { src: "img/github.svg", width: 100, height: 100 }
           },

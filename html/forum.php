@@ -30,14 +30,14 @@ else {
 		while($row=$result->fetch_assoc()){
 			$id = $row['post_id'];
 			$email = $row['post_by'];
-			echo "<a href='questionview.php?id=$id&creator=$email'><br>";
+			echo "<a href='questionview.php?id=$id'><br>";
 			echo "<div class='row' style='font-family: vanillaregular'>";
 			echo "<div class='col rounded' style='background-color:white'>";
 			echo "Topic: &nbsp" . $row['post_title'];
 			echo "<br><br>";
 			echo "What's happening: " .$row['post_content'];
 			echo "<div class='text-right'>";
-			echo "View | Reply | Delete";
+			echo "<a href='questionview.php?id=$id'>View</a> | Reply | <a href='delete.php?id=$id'>Delete</a>";
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
