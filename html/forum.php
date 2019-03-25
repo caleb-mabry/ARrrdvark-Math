@@ -28,7 +28,9 @@ else {
 	$result = $conn->query($query);
 	if($result->num_rows > 0) {
 		while($row=$result->fetch_assoc()){
-			echo "<br>";
+			$id = $row['post_id'];
+			$email = $row['post_by'];
+			echo "<a href='questionview.php?id=$id&creator=$email'><br>";
 			echo "<div class='row' style='font-family: vanillaregular'>";
 			echo "<div class='col rounded' style='background-color:white'>";
 			echo "Topic: &nbsp" . $row['post_title'];
@@ -39,7 +41,7 @@ else {
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
-			echo "<br>";
+			echo "<br></a>";
 			}
 		}
       ?>
