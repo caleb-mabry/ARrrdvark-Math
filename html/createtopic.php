@@ -1,4 +1,5 @@
 <?php
+$title = "Question Creator";
 session_start();
 include ('db-connect.php');
 include ('header.php');
