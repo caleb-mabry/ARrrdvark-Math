@@ -14,11 +14,11 @@ include ('header.php');
 				<form method="post" action="createtopicaction.php">
 					<div class="form-group">
 						<label for="titleOfTopic">Topic Title</label>
-						<input type="text" class="form-control" name="titleOfTopic">
+						<input type="text" class="form-control" name="titleOfTopic" required>
 					</div>
 					<div class="form-group">
 						<label for="textOfTopic">What's going on?</label>
-						<textarea class="form-control" name="textOfTopic" rows="3"></textarea>
+						<textarea class="form-control" name="textOfTopic" rows="3" required></textarea>
 					</div>
 					  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 				</form>

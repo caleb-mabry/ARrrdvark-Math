@@ -10,7 +10,7 @@ $query = "INSERT INTO reply(reply_id, reply_content, reply_by, post_id) VALUES (
 
 $result = $conn->query($query);
 	if ($result) {
-		header("Location:https://ardvarklearning.net/forum.php");
+		header("Location:https://ardvarklearning.net/questionview.php?id=$post_id");
 	} else {
 		echo "False";
 	}

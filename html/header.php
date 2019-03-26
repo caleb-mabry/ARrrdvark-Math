@@ -11,13 +11,13 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 
 <title>ARdvark Learning | <?php echo $title; ?></title>
 
 <!-- Link to our stylesheet DO NOT MOVE -->
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">

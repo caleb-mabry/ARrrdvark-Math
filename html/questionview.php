@@ -17,34 +17,35 @@ include('header.php');
 		$result = $conn->query($query);
 		//This is the main post
 		if ($row=$result->fetch_assoc()) {
-			echo "<div class='row' style='font-family: vanillaregular'>";
-			echo "<div class='col rounded' style='background-color:white'>";
-			echo "Topic: &nbsp" . $row['post_title'];
-			echo "<br><br>";
+			echo "<div class='row' style='font-family:Noto Sans TC ; color:white;'>";
+			echo "<div class='col rounded' style='background-color:#323e78'>";
+			echo "<div class='text-center'><h3>" . $row['post_title'] . "</h3></div>";
 			echo "What's happening: " .$row['post_content'];
 			echo "<div class='text-right'>";
 			if ($_SESSION['loginEmail'] == $row['post_by']) {
-			echo "<a href='reply.php?id=$id'>Reply</a> | <a href='delete.php?id=$id'>Delete</a>";
+			echo "<a href='reply.php?id=$id' style='color:white'>Reply</a> | <a href='delete.php?id=$id' style='color:white'>Delete</a>";
 			} else {
-			echo "<a href='reply.php?id=$id'>Reply</a>";
+			echo "<a href='reply.php?id=$id' style='color:white'>Reply</a>";
 			}
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
 			echo "<br></a>";
 		}
+		//This is where all of the replies start.
 		$query1 ="SELECT * FROM reply WHERE post_id=$id";
                 $result = $conn->query($query1);
                 while ($row=$result->fetch_assoc()) {
-                        echo "<div class='row' style='font-family: vanillaregular'>";
-                        echo "<div class='col rounded' style='background-color:white'>";
+			$reply_id=$row['reply_id'];
+                        echo "<div class='row' style='font-family: Noto Sans TC; color:white;'>";
+                        echo "<div class='col rounded' style='background-color:#323e78'>";
                         echo "What's happening: " .$row['reply_content'];
                         echo "<div class='text-right'>";
 			if ($_SESSION['loginEmail'] == $row['reply_by']) {
-                        echo "<a href='delete.php?id=$id'>Delete</a>";
+                        echo "<a href='deletereply.php?id=$id&rid=$reply_id' style='color:white'>Delete</a>";
 			}
 			else {
-			
+
 			}
                         echo "</div>";
                         echo "</div>";

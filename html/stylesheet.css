@@ -10,6 +10,9 @@
     font-family: 'Arvo';
     src: url(Arvo-Regular.ttf);
 }
+@font-face {
+font-family: 'Noto Sans TC', sans-serif;	
+}
 nav {
   font-family: vanillaregular;   
 }
@@ -267,4 +270,6 @@ label {
       border-bottom-right-radius: 40px;
       opacity: 1;
     }
+
+a, a:hover, a:active, a:visited { color: white; }
 

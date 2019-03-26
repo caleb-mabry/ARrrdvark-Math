@@ -6,17 +6,16 @@ include 'header.php';
 <body class="moving-backgrounds">
 	<div id="particles-js"></div>
 	<div class="container-fluid">
-		<span class="text-center1 text-center" style="color: white;"><h2 style="font-family: vanillaregular">Your Learning Experience Starts <b>NOW</b></h2></span>
+		<div style="padding-top:5%;"></div>
+		<span class="text-center1 text-center" style="color: white"><h2 style="font-family: vanillaregular">Your Learning Experience Starts NOW</h2></span>
 		<div class="container-fluid container" style="font-family: vanillaregular; padding-top: 5%;"> 
 			<div class="row">
 				<div class="col-sm">
 				</div>
 				<div class="col-md">
-					<div class="row" style="padding-top: 10%; color: white" >
-						
-						<div class="col rounded" style="background-color: #323E78; padding-top: 5%">
+					<div class="row" style=" color: white" >
+						<div class="col rounded" style="background-color: #323E78; padding-top:5% ">
 							<form method="post" action="signupUser.php">
-								<!-- Display validation errors here -->
 								<div class="form-group">
 									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required="required">
 								</div>
