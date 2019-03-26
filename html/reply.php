@@ -18,7 +18,7 @@ $id = $_GET['id'];
 ?>
 					<div class="form-group">
 						<label for="replyToTopic">What's going on?</label>
-						<textarea class="form-control" name="replyToTopic" rows="3"></textarea>
+						<textarea class="form-control" name="replyToTopic" rows="3" required></textarea>
 					</div>
 					  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 				</form>

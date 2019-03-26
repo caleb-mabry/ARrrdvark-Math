@@ -23,7 +23,11 @@ include('header.php');
 			echo "<br><br>";
 			echo "What's happening: " .$row['post_content'];
 			echo "<div class='text-right'>";
+			if ($_SESSION['loginEmail'] == $row['post_by']) {
 			echo "<a href='reply.php?id=$id'>Reply</a> | <a href='delete.php?id=$id'>Delete</a>";
+			} else {
+			echo "<a href='reply.php?id=$id'>Reply</a>";
+			}
 			echo "</div>";
 			echo "</div>";
 			echo "</div>";
@@ -34,10 +38,14 @@ include('header.php');
                 while ($row=$result->fetch_assoc()) {
                         echo "<div class='row' style='font-family: vanillaregular'>";
                         echo "<div class='col rounded' style='background-color:white'>";
-                        echo "<br><br>";
                         echo "What's happening: " .$row['reply_content'];
                         echo "<div class='text-right'>";
-                        echo "Reply | <a href='delete.php?id=$id'>Delete</a>";
+			if ($_SESSION['loginEmail'] == $row['reply_by']) {
+                        echo "<a href='delete.php?id=$id'>Delete</a>";
+			}
+			else {
+			
+			}
                         echo "</div>";
                         echo "</div>";
                         echo "</div>";
