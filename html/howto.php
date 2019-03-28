@@ -3,62 +3,33 @@ session_start();
 $title="How To";
 include'header.php';
 ?>
-<body class="moving-backgrounds-scroll-allow">
+<body>
 <div id="particles-js"></div>
-<div class="sidenav">
-  <div class="sidenav-cont">
-    <img class="pt-5" src="archie.png">
-  <button class="dropdown-btn">Basic 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <button class="dropdown-btn">How To 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <button class="dropdown-btn">Broken
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <button class="dropdown-btn">Tips + Tricks
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <button class="dropdown-btn">Helpy Help 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
+<div class="container">
+	<div class="row">
+		<div class="col-2 fixed">
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="#top">Get Started</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
 </div>
+<div class="col" style="padding-left:10%;">
 </div>
 
-<div class="main">
-  <h2 style="color: white;">Table of Contents</h2>
-  <p style="color: white;">Lorem ipsum dolor sit amet, ei quo liber maluisset, per ut audire recusabo, in duo debitis minimum. Vel at inermis facilisis. Erant voluptatum at has. Justo menandri definitionem sea ut, audiam accusata pri ad.
 
-Duo id novum essent tibique, in agam semper maluisset eos, vis ad causae corpora. Praesent electram periculis ei eum, putant probatus ne eum, luptatum reformidans te per. Te nam labores accusamus.</p>
 
+	</div>
 </div>
-
 
 
 

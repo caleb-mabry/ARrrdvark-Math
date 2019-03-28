@@ -6,10 +6,9 @@ include'header.php';
 <body>
 <div id="particles-js"></div>
 <div class="sidenav">
-	<nav class = "nav flex-column">
-		<a class="nav-link">OOF</a>
-		<a class="nav-link">OOOF</a>
-		<a class="nav-link">OOOOF</a>
+	<nav>
+		<a class="nav-link">BIG SUCC</a>
+	
 	</nav>
 </div>
 
@@ -91,6 +90,23 @@ include'header.php';
 
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active-sidebar");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
 
 </body>
 
