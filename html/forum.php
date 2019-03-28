@@ -32,7 +32,7 @@ else {
 			$email = $row['post_by'];
 			echo "<a href='questionview.php?id=$id' style='color:white'><br>";
 			echo "<div class='row' style='font-family: Noto Sans TC'>";
-			echo "<div class='col rounded' id='makeWhiteText' style='background-color:#323e78;padding-top:3%;'>";
+			echo "<div class='col rounded' id='makeWhiteText' style='background-color:#323e78;padding-top:1%;'>";
 			echo "<div class='text-center'><h3>" . $row['post_title'] . "</h3></div>";
 			echo "What's happening: " .$row['post_content'];
 			echo "<div class='text-right'>";

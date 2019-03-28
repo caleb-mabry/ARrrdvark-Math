@@ -15,7 +15,14 @@ include 'header.php';
 				<div class="col-md">
 					<div class="row" style=" color: white" >
 						<div class="col rounded" style="background-color: #323E78; padding-top:5% ">
-							<form method="post" action="signupUser.php">
+								<form method="post" action="signupUser.php">
+								                                                        <?php
+                                                                        if(isset($_SESSION['dupEmail'])) {
+                                                                        echo $_SESSION['dupEmail'];
+									unset($_SESSION['dupEmail']);
+                                                                }
+                                                                ?>
+
 								<div class="form-group">
 									<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required="required">
 								</div>

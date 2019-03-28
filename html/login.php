@@ -16,13 +16,18 @@ include('header.php');
 
 				</div>
 				<div class="col-4 rounded" style="background-color: #323E78; padding-top: 3%;">
-
+					<?php
+						if(isset($_SESSION['error'])) {
+						echo $_SESSION['error'];
+						}
+					unset($_SESSION['error']);
+					?>
 					<form action="login-process.php" method="post" name="loginSubmit">
 						<div class="form-group">
 							<input type="email" class="form-control" name="loginEmail" placeholder="Enter email">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" name="loginPassword" placeholder="Enter Password">
+							<input type="password" class="form-control" name="loginPassword" placeholder="Enter Password" required>
 						</div>
 						<button type="submit" class="btn btn-primary" name="submitButton">Submit</button>
 					</form>

@@ -38,7 +38,7 @@ include('header.php');
                 while ($row=$result->fetch_assoc()) {
 			$reply_id=$row['reply_id'];
                         echo "<div class='row' style='font-family: Noto Sans TC; color:white;'>";
-                        echo "<div class='col rounded' style='background-color:#323e78'>";
+                        echo "<div class='col rounded' style='background-color:#323e78; padding-top:3%; padding-bottom:3%;'>";
                         echo "What's happening: " .$row['reply_content'];
                         echo "<div class='text-right'>";
 			if ($_SESSION['loginEmail'] == $row['reply_by']) {

@@ -6,9 +6,9 @@ session_start();
         $username = stripslashes($_POST['loginEmail']);
         $password = stripslashes($_POST['loginPassword']);
         //escapes special characters in a string
-        $username = mysqli_real_escape_string($conn,$username); 
+        $username = mysqli_real_escape_string($conn,$username);
         $password = mysqli_real_escape_string($conn,$password);
-    //Checking is user existing in the database or not
+    	//Checking is user existing in the database or not
         $query = "SELECT *
         FROM users 
         WHERE email='$username'
@@ -21,7 +21,8 @@ session_start();
             header("Location: https://ardvarklearning.net/forum.php");
         }
         else{
-            echo "Password is incorrect";
+            $_SESSION['error'] = "Your username or password is incorrect";
+	header("Location: https://ardvarklearning.net/login.php");
         }
 
     }else{

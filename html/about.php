@@ -26,7 +26,7 @@ include 'header.php';
 				<!-- Used as Spacing -->
 			</div>
 			<div class="col-6 text-center rounded formattingAboutDescText">
-				<img src="CCPhoto.jpg" class="rounded img-fluid" style="width: 500px; height: 500px">
+				<img src="CCPhoto.jpg" class="rounded img-fluid">
 				<br><br>
 				<h4>Cameron Carlson</h4>
 				<h5>The lead candy</h5>

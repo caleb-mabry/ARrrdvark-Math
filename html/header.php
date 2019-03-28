@@ -1,7 +1,16 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
+	<!-- This is the start for Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137185054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-137185054-1');
+</script>
   	<!-- script for the moving background -->
   	<script type="text/javascript" src="particles.js"></script>
 
@@ -21,7 +30,7 @@
 
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-	<a class="navbar-brand" href="index.php">ARdvark Learning</a>
+	<a class="navbar-brand" href="index.php"><img src="Archie2.png" width="70" height="70">ARdvark Learning</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -29,7 +38,7 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="about.php">About</a>
@@ -42,16 +51,17 @@
 			</li>
 		</ul>
 		<ul class="navbar-nav mr-right">
-			<li class="nav-item">
         <?php if(!isset($_SESSION['loginEmail'])): ?>
+			<li class="nav-item">
 				<a class="nav-link" href="login.php">Login</a>
-        <?php else: ?>
-          <a class="nav-link" href="logout.php">Logout</a>
-        <?php endif ?>
-			</li>
+        		</li>
 			<li class="nav-item">
 				<a class="nav-link" href="signup.php">Sign Up</a>
 			</li>
+	<?php else: ?>
+          <a class="nav-link" href="logout.php">Logout</a>
+        <?php endif ?>
+
 		</ul>
 	</div>
 </nav>
