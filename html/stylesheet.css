@@ -14,12 +14,31 @@
 font-family: 'Noto Sans TC', sans-serif;	
 }
 nav {
-  font-family: vanillaregular;   
+  font-family: vanillaregular;  
 }
-#landingPageBackground {
-  background-image: url(phonePopout.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+body,html {
+    margin: 0;
+    padding: 0;
+}
+#fromTheTop {
+color:white;
+position:absolute;
+background-color:red;
+width:100px;
+height:100px;
+}
+.fromTheBottom {
+color:white;
+}
+.landingPageBackground {
+	background-image:url("phonePopout.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;	
+	position:fixed;
+	height: 100vh;
+	width: 100vw;
+	overflow:block;
 }
 .formattingAboutDescText {
   font-family: Arvo;
@@ -52,9 +71,10 @@ overflow-x:hidden;
   padding-top: 15%;
 }
 h1 {
-  font-family: eraserregular;
-  color: white;
+  font-family: vanillaregular;
+  color:white;
   font-size: 5em;
+ 
 }
 
 /* navbar item spacing */

@@ -23,7 +23,14 @@ include'header.php';
   </li>
 </ul>
 </div>
-<div class="col" style="padding-left:10%;">
+<!-- All of the information that will be stored in the navigation -->
+<div class="col" style="padding-left:10%;color:white;">
+	<h3 class="text-center">Getting Started</h3>
+	<p>ARdvark Learning is a company that creates applications designed for supplementing the learning experience inside and outside of the classroom.
+	Our recent application, Ardvark Math, is an application that works on any device running Android. You can find the link to download the application onto your phone here.</p>
+	<br>
+	<img src="androidIcon.svg"><button type="button" class="btn btn-success" href="nono.html">Android Download</button>
+
 </div>
 
 

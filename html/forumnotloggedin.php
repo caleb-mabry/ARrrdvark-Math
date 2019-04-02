@@ -6,7 +6,7 @@ include'header.php';
     <div id="particles-js"></div>
       <div class="row">
         <div class="col text-center">
-        <h1> Please sign in or register before you view the forum </h1>
+       <h3 style="color:white"> Please sign in or register before you view the forum </h3>
       </div>
 
 

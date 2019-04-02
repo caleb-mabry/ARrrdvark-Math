@@ -7,7 +7,7 @@ include 'header.php';
 
 <body>
 	<div id="particles-js"></div>
-	<div class="container-fluid ">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
 				<!-- Used as Spacing -->

@@ -3,8 +3,8 @@
 <head>
 	<!-- This is the start for Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137185054-1"></script>
-<script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137185054-1"></script>
+	<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -13,7 +13,7 @@
 </script>
   	<!-- script for the moving background -->
   	<script type="text/javascript" src="particles.js"></script>
-
+	<script src="jquery-3.3.1.min.js"></script>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,12 +23,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 
+
+	
 <title>ARdvark Learning | <?php echo $title; ?></title>
 
 <!-- Link to our stylesheet DO NOT MOVE -->
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 	<a class="navbar-brand" href="index.php"><img src="Archie2.png" width="70" height="70">ARdvark Learning</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
