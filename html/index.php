@@ -4,13 +4,12 @@ $title = "Home";
 include('header.php');
 ?>
 <div class="landingPageBackground"></div>
-<div id="fromTheTop"></div>
-<div class="fromTheBottom">The future of learning</div>
+<div id="fromTheTop"><h3>ARdvark Learning</h3></div>
 			<!-- Optional JavaScript -->
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 			<script>
 				$(document).ready(function(){
-				$("#fromTheTop").animate({marginTop:"500px"});;
+				$("#fromTheTop").animate({marginTop:"7%",marginLeft:"8%"});;
 				});
 			</script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

@@ -23,12 +23,24 @@ body,html {
 #fromTheTop {
 color:white;
 position:absolute;
-background-color:red;
-width:100px;
-height:100px;
+font-family: vanillaregular;
 }
 .fromTheBottom {
 color:white;
+}
+.parallax {
+  /* The image used */
+  background-image: url("arParallax.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  width: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .landingPageBackground {
 	background-image:url("phonePopout.png");
@@ -53,6 +65,7 @@ height:100%;
 z-index:1;
 background-color: #111;
 left:0;
+width:100px;
 overflow-x:hidden;
 }
 .sidenav {
@@ -185,3 +198,9 @@ label {
 
 a, a:hover, a:active, a:visited { color: white; }
 
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+display:hidden;
+background-attachment: scroll;
+  }
+}

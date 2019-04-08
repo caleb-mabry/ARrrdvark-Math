@@ -3,63 +3,26 @@ session_start();
 $title="About Us";
 include 'header.php';
 ?>
+<div id="particles-js"></div>
+
+<div class="parallax container-fluid"></div>
+<br>
+<div  class="container-fluid">
+<div class="row">
+	<div class="col-4"><img src="CMPhoto.png" class="img-fluid" alt="Photo of Caleb"></div>
+	
+	<div class="col"><h3>Caleb</h3></div>
+</div>
+<br>
+<div class="row">
+	<div class="col-4"><img src="CCPhoto.jpg" class="img-fluid" alt="Photo of Cameron"></div>
+	<div class="col"><h3>Cameron</h3></div>
+</div>
+
+</div>
 
 
-<body>
-	<div id="particles-js"></div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<!-- Used as Spacing -->
-			</div>
-			<div class="col-8">
-				<img class="rounded img-fluid" src="togetherness.jpeg" alt="Cameron and Caleb, founders of ARdvark Learning">
-			</div>
-			<div class="col">
-				<!-- Used as Spacing -->
-			</div>
-		</div>
 
-		<br>
-		<div class="row">
-			<div class="col">
-				<!-- Used as Spacing -->
-			</div>
-			<div class="col-6 text-center rounded formattingAboutDescText">
-				<img src="CCPhoto.jpg" class="rounded img-fluid">
-				<br><br>
-				<h4>Cameron Carlson</h4>
-				<h5>The lead candy</h5>
-				<h5>Cam is a sucker for a good piece of candy, but when he's full, he's ready for an even better piece of candy. While laying awake at night, some of his most reoccurring thoughts are: If the Earth is flat and there are ice walls surrounding the edges, why haven't we flown over them? Will Elon Musk actually make it possible to live on Mars in my lifetime? Why can I never plug in my USB on the first try? Minds like his will end up saving the ecosystem, and end world hunger.
-				</h5>
-
-			</div>
-			<div class="col">
-				<!-- Used as Spacing -->
-			</div>
-		</div>
-
-		<br>
-
-		<div class="row">
-			<div class="col">
-				<!-- Used as Spacing -->
-			</div>
-			<div class="col-6 text-center rounded formattingAboutDescText">
-				<img src="CMPhoto.png" class="rounded img-fluid">
-				<br><br>
-				<h4>Caleb Mabry</h4> 
-				<h5>The lead lint COLLECTOR</h5>
-				<br>
-				<h5>
-					Caleb's favorite hobbies include: collecting belly button lint, timing the local bus routes, staring at Richmond's light polluted sky and kicking dirt on peoples shoes. When he isn't doing these things, he's most likely reading about how to become a better programmer and wheat penny enthusiast.
-				</h5>
-			</div>
-			<div class="col">
-				<!-- Used as Spacing -->
-			</div>
-		</div>
-	</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

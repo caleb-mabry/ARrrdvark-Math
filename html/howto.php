@@ -7,7 +7,7 @@ include'header.php';
 <div id="particles-js"></div>
 <div class="container">
 	<div class="row">
-		<div class="col-2 fixed">
+		<div class="fixed">
 <ul class="nav flex-column">
   <li class="nav-item">
     <a class="nav-link active" href="#top">Get Started</a>
@@ -24,12 +24,12 @@ include'header.php';
 </ul>
 </div>
 <!-- All of the information that will be stored in the navigation -->
-<div class="col" style="padding-left:10%;color:white;">
+<div class="col" style="color:white;margin-right:0;margin-left:160px;">
 	<h3 class="text-center">Getting Started</h3>
 	<p>ARdvark Learning is a company that creates applications designed for supplementing the learning experience inside and outside of the classroom.
 	Our recent application, Ardvark Math, is an application that works on any device running Android. You can find the link to download the application onto your phone here.</p>
 	<br>
-	<img src="androidIcon.svg"><button type="button" class="btn btn-success" href="nono.html">Android Download</button>
+	<img src="androidIcon.svg"><button type="button" class="btn btn-success">Android Download</button>
 
 </div>
 

@@ -3,12 +3,12 @@ session_start();
 $title="Sign Up";
 include 'header.php';
 ?>
-<body class="moving-backgrounds">
+<body>
 	<div id="particles-js"></div>
 	<div class="container-fluid">
 		<div style="padding-top:5%;"></div>
 		<span class="text-center1 text-center" style="color: white"><h2 style="font-family: vanillaregular">Your Learning Experience Starts NOW</h2></span>
-		<div class="container-fluid container" style="font-family: vanillaregular; padding-top: 5%;"> 
+		<div class="container-fluid container" style="font-family: vanillaregular; padding-top: 2%;"> 
 			<div class="row">
 				<div class="col-sm">
 				</div>
