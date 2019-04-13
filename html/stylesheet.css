@@ -30,7 +30,7 @@ color:white;
 }
 .parallax {
   /* The image used */
-  background-image: url("arParallax.jpeg");
+  background-image: url("../Pictures/arParallax.jpeg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -43,7 +43,7 @@ color:white;
   background-size: cover;
 }
 .landingPageBackground {
-	background-image:url("phonePopout.png");
+	background-image:url("../Pictures/phonePopout.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;	

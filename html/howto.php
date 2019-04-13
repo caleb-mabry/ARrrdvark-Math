@@ -29,7 +29,7 @@ include'header.php';
 	<p>ARdvark Learning is a company that creates applications designed for supplementing the learning experience inside and outside of the classroom.
 	Our recent application, Ardvark Math, is an application that works on any device running Android. You can find the link to download the application onto your phone here.</p>
 	<br>
-	<img src="androidIcon.svg"><button type="button" class="btn btn-success">Android Download</button>
+	<button type="button" class="btn btn-success">Android Download</button>
 
 </div>
 
