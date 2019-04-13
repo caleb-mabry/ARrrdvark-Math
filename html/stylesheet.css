@@ -1,17 +1,22 @@
 @font-face {
     font-family: vanillaregular;
+	font-display:auto;
     src: url(Vanilla-webfont.woff);
 }
 @font-face{
     font-family: eraserregular;
+font-display:auto;
     src: url(EraserRegular-webfont.woff);
 }
 @font-face {
     font-family: 'Arvo';
+font-display:auto;
     src: url(Arvo-Regular.ttf);
 }
 @font-face {
 font-family: 'Noto Sans TC', sans-serif;	
+font-display:auto;
+
 }
 nav {
   font-family: vanillaregular;  
@@ -73,7 +78,7 @@ background-color:rgba(0,0,0,.5);
 }
 .parallax {
   /* The image used */
-  background-image: url("/Pictures/arParallax.jpeg");
+  background-image: url("/Pictures/arParallax.webp");
 
   /* Set a specific height */
   min-height: 500px;

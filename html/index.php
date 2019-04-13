@@ -37,7 +37,7 @@ include('header.php');
 			</div>
 		</div>
 		<div class="col-4">
-		<img src="../Pictures/Archie2.png" class="img-fluid">
+		<img src="../Pictures/Archie2.png" class="img-fluid" alt="Logo of Archie the ARdvark">
 		<h1>ARdvark Math</h1>
 		</div>
 	<div class="col-4 improveContrast noShowMobile">
