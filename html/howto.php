@@ -19,10 +19,10 @@ include'header.php';
     <a class="nav-link" href="#need_to_know">Need to Know</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Main Menu</a>
+    <a class="nav-link" href="#main_menu">Main Menu</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Geometry</a>
+    <a class="nav-link" href="#geo">Geometry</a>
   </li>
 </ul>
 </div>
@@ -56,14 +56,15 @@ include'header.php';
 	<br>
 	<div class="col-md-8 offset-md-2"><img src="ScreenShots/menuSS.png" class="img-fluid" alt="MainMenu ScreenShot"></div>
 	<br>
-	<p>Our main menu will allow you to navigate to the different difficulties of each category, and the Number's Sandbox(more about <font color="blue"> Number's Sandbox</font>).
+	<p id="geo">Our main menu will allow you to navigate to the different difficulties of each category, and the Number's Sandbox(more about <font color="blue"> Number's Sandbox</font>).
 	Other things you can find on our homepage are our <font color="blue">contact information</font> and <font color="blue">privacy policy</font>, which are available by clicking the "Info" button, located at the top right of the Menu screen.</p>
 	<br>
 	<h3 class="text-center">Geometry</h3>
 	<br>
 	<div class="col-md-8 offset-md-2"><img src="ScreenShots/InterGeoSS.png" class="img-fluid" alt="InterGeometry ScreenShot"></div>
 	<br>
-	<p>The geometry category will test your ability to substitue values into a formula and manipulate variables.</p>
+	<p>The geometry category will test your ability to substitue values into a formula and manipulate variables. Under the easy difficulty, you can practice finding the angle to a triangle.
+	You will have to find the volume of a sphere the surface area to a section of a cylinder in the intermediate and hard difficulties of the geometry category, respectively.</p>
 </div>
 
 
