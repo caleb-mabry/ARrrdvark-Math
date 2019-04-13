@@ -20,13 +20,56 @@ body,html {
     margin: 0;
     padding: 0;
 }
-#fromTheTop {
+
+.moveDown {
+margin-top:15%;
 color:white;
-position:absolute;
-font-family: vanillaregular;
 }
-.fromTheBottom {
-color:white;
+.improveContrast {
+background-color:rgba(0,0,0,.5);
+}
+.noShowMobile {
+
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #111;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
 }
 .parallax {
   /* The image used */
@@ -43,7 +86,7 @@ color:white;
   background-size: cover;
 }
 .landingPageBackground {
-	background-image:url("../Pictures/phonePopout.png");
+	background-image:url("../Pictures/mountain.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;	
@@ -86,7 +129,6 @@ width:15%;
 h1 {
   font-family: vanillaregular;
   color:white;
-  font-size: 5em;
  
 }
 
@@ -111,15 +153,9 @@ h1 {
 
 /* centering the word "ARrrdvark" on the home(index.html) page */
 .center{
- position: absolute;
- top:20%;
- left: 20%;
- z-index:1;
- font-size: 110px;
- color: #B3B3B4;
- letter-spacing: 6px; 
- font-weight: bold;
- font-family: 'Waiting for the Sunrise', cursive;
+	margin-left:auto;
+	margin-right:auto;
+display:block;
 }
 
 /* centering the word "Math" on the home(index.html) page */
@@ -198,9 +234,12 @@ label {
 
 a, a:hover, a:active, a:visited { color: white; }
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 950px) {
   .parallax {
 display:hidden;
 background-attachment: scroll;
   }
+.noShowMobile {
+visibility:hidden;
+}
 }

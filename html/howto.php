@@ -7,8 +7,8 @@ include'header.php';
 <div id="particles-js"></div>
 <div class="container">
 	<div class="row">
-		<div class="fixed">
-<ul class="nav flex-column">
+		<div class="fixed noShowMobile">
+<ul class="nav flex-column" >
   <li class="nav-item">
     <a class="nav-link active" href="#top">Get Started</a>
   </li>
