@@ -30,7 +30,7 @@ color:white;
 }
 .parallax {
   /* The image used */
-  background-image: url("../Pictures/arParallax.jpeg");
+  background-image: url("/Pictures/arParallax.jpeg");
 
   /* Set a specific height */
   min-height: 500px;
