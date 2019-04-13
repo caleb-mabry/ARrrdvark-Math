@@ -57,7 +57,9 @@ include'header.php';
 	<div class="col-md-8 offset-md-2"><img src="Pictures/menuSS.png" class="img-fluid" alt="MainMenu ScreenShot"></div>
 	<br>
 	<p id="geo">Our main menu will allow you to navigate to the different difficulties of each category, and the Number's Sandbox(more about <font color="blue"> Number's Sandbox</font>).
-	Other things you can find on our homepage are our <font color="blue">contact information</font> and <font color="blue">privacy policy</font>, which are available by clicking the "Info" button, located at the top right of the Menu screen.</p>
+	Other things you can find on our homepage are our <a style="color:#EAC117" href="javascript:window.open('contactInfo.html', 'Contact Information', 'width=200,height=150');">
+	Contact Information</a> and <a style="color:#EAC117" href="javascript:window.open('privacyPolicy.html', 'privacyPolicy', 'width=50%,height=50%');">
+	Privacy Policy</a>, which are available by clicking the "Info" button, located at the top right of the Menu screen.</p>
 	<br>
 	<h3 class="text-center">Geometry</h3>
 	<br>
