@@ -33,7 +33,7 @@ include'header.php';
 	   of the image targets. Below, we have provided a link to download the Android .apk so that you may download the application before it goes public on the
 	   Google Play Store.</p>
 	<br>
-	<div class="text-center"><img src="androidIcon.svg" ><button type="button" class="btn btn-success">Android Download</button></div>
+	<div class="text-center"><img src="Pictures/androidIcon.svg" ><button type="button" class="btn btn-success">Android Download</button></div>
 	<br>
 	<h3 class="text-center" id="need_to_know">Image Targets</h3>
 	<p>Image targets are used to bring our equations to life. You can download all of ARdvark Learnings image targets below and print them off. In order to have you camera recognize
@@ -54,14 +54,14 @@ include'header.php';
 	<br>
 	<h3 class="text-center">Our Main Menu</h3>
 	<br>
-	<div class="col-md-8 offset-md-2"><img src="ScreenShots/menuSS.png" class="img-fluid" alt="MainMenu ScreenShot"></div>
+	<div class="col-md-8 offset-md-2"><img src="Pictures/menuSS.png" class="img-fluid" alt="MainMenu ScreenShot"></div>
 	<br>
 	<p id="geo">Our main menu will allow you to navigate to the different difficulties of each category, and the Number's Sandbox(more about <font color="blue"> Number's Sandbox</font>).
 	Other things you can find on our homepage are our <font color="blue">contact information</font> and <font color="blue">privacy policy</font>, which are available by clicking the "Info" button, located at the top right of the Menu screen.</p>
 	<br>
 	<h3 class="text-center">Geometry</h3>
 	<br>
-	<div class="col-md-8 offset-md-2"><img src="ScreenShots/InterGeoSS.png" class="img-fluid" alt="InterGeometry ScreenShot"></div>
+	<div class="col-md-8 offset-md-2"><img src="Pictures/InterGeoSS.png" class="img-fluid" alt="InterGeometry ScreenShot"></div>
 	<br>
 	<p>The geometry category will test your ability to substitue values into a formula and manipulate variables. Under the easy difficulty, you can practice finding the angle to a triangle.
 	You will have to find the volume of a sphere the surface area to a section of a cylinder in the intermediate and hard difficulties of the geometry category, respectively.</p>
