@@ -5,18 +5,20 @@ include 'header.php';
 ?>
 <div id="particles-js"></div>
 
-<div class="parallax container-fluid"></div>
+<div class="parallax"></div>
 <br>
 <div  class="container-fluid">
 <div class="row">
 	<div class="col-4"><img src="CMPhoto.png" class="img-fluid" alt="Photo of Caleb"></div>
 	
-	<div class="col"><h3>Caleb</h3></div>
+	<div class="col"><h3 style="color: white">Caleb is the main web developer for the project Ardvark Math. For the past couple of years, Caleb has been working
+	to create responsive websites that provide users with an unparalled experience. This website was built using HTML5, CSS3, PHP7, and sprinkles of (not so wonderful) javascript. After graduation, Caleb will be working as a PHP developer and hopes to expand the usability of Ardvark Math. I love to work on side projects and help those who are looking to learn more. You can reach out to me at caleb.mabry.15@cnu.edu.</h3></div>
 </div>
 <br>
 <div class="row">
 	<div class="col-4"><img src="CCPhoto.jpg" class="img-fluid" alt="Photo of Cameron"></div>
-	<div class="col"><h3>Cameron</h3></div>
+		<div class="col"><h3 style="color: white">Cameron is the lead application developer for the project Ardvark Math. Cam has been spending most of his time learning new techniques in Unity and C# to further improve the app's overall function and quality.
+		He hopes to continue to create new content and applications with ARdvark Learning and Caleb. After graduating this year, Cam plans on finding a company where he can continue to help others and enjoy doing it.</h3></div>
 </div>
 
 </div>

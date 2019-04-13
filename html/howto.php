@@ -13,24 +13,57 @@ include'header.php';
     <a class="nav-link active" href="#top">Get Started</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#top">Image Targets</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#need_to_know">Need to Know</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
+    <a class="nav-link" href="#">Main Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Geometry</a>
   </li>
 </ul>
 </div>
 <!-- All of the information that will be stored in the navigation -->
-<div class="col" style="color:white;margin-right:0;margin-left:160px;">
+<div class="col" style="color:white;margin-right:0;padding-left:10%;margin-left:5%;">
 	<h3 class="text-center">Getting Started</h3>
-	<p>ARdvark Learning is a company that creates applications designed for supplementing the learning experience inside and outside of the classroom.
-	Our recent application, Ardvark Math, is an application that works on any device running Android. You can find the link to download the application onto your phone here.</p>
+	<p>In order to use ARdvark Learning, you must first have a device that has a camera. Without a camera, your device will not be able to recognize any
+	   of the image targets. Below, we have provided a link to download the Android .apk so that you may download the application before it goes public on the
+	   Google Play Store.</p>
 	<br>
-	<img src="androidIcon.svg"><button type="button" class="btn btn-success">Android Download</button>
-
+	<div class="text-center"><img src="androidIcon.svg" ><button type="button" class="btn btn-success">Android Download</button></div>
+	<br>
+	<h3 class="text-center" id="need_to_know">Image Targets</h3>
+	<p>Image targets are used to bring our equations to life. You can download all of ARdvark Learnings image targets below and print them off. In order to have you camera recognize
+	   the image targets best, please be aware that cameras do not like glossy surfaces. Some camera resolutions are higher than others so you might have to point your phone directly
+	   at the image target.</p>
+	<form action="ImageTargets.pdf" class="text-center"  method="get">
+	<button type="submit" class="btn btn-success">Image Targets</button>
+	</form>
+	<br>
+	<h3 class="text-center">What You Should Know</h3>
+	<p>ARdvark Math can aid any student to study general math concepts in a fun and engaging way with augmented reality. There are 5 categories that you can test your knowledge in, each category having 3 different difficulties.
+	With 15 different randomly generated equations to test your knowledge, there are plenty of concepts to practice. The 5 categories that are currently available
+	to be practiced are: Vectors, Numbers(General Arithmetic), Algebra, Fractions, Geometry. There are Image Targets for each of these categories, including the numgers 0-9, arithemtic operators, and a "Dropdown Equation" Image Target. When you select your difficulty in the main menu, your camera will appear with our overlay. To practice a specific
+	category, you must place the corresponding Image Target in front of the camera for ARdvark Math to superimpose a practice problem overtop the Image Target. For example,
+	if someone were to practice their algebra skills, they would simply need to place select "Algebra" from the dropdown menu and put the Algebra Image Target in front of the camera, like so (Show Screenshot of this).
+	To try and solve the equation, you must use the numpad on the image to input your answer, then press the Enter button. The display will change to either "CORRECT" or "TRY AGAIN",
+	indicating if you were able to guess the correct answer. You're always welcome to try as many times as you would like.<br> To get a new set of numbers for a new equation, hit the Refresh button and it will reset the variables in the equation and provide a new equation.</p>
+	<br>
+	<h3 class="text-center">Our Main Menu</h3>
+	<br>
+	<div class="col-md-8 offset-md-2"><img src="ScreenShots/menuSS.png" class="img-fluid" alt="MainMenu ScreenShot"></div>
+	<br>
+	<p>Our main menu will allow you to navigate to the different difficulties of each category, and the Number's Sandbox(more about <font color="blue"> Number's Sandbox</font>).
+	Other things you can find on our homepage are our <font color="blue">contact information</font> and <font color="blue">privacy policy</font>, which are available by clicking the "Info" button, located at the top right of the Menu screen.</p>
+	<br>
+	<h3 class="text-center">Geometry</h3>
+	<br>
+	<div class="col-md-8 offset-md-2"><img src="ScreenShots/InterGeoSS.png" class="img-fluid" alt="InterGeometry ScreenShot"></div>
+	<br>
+	<p>The geometry category will test your ability to substitue values into a formula and manipulate variables.</p>
 </div>
 
 
