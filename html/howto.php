@@ -52,6 +52,11 @@ include'header.php';
 	To try and solve the equation, you must use the numpad on the image to input your answer, then press the Enter button. The display will change to either "CORRECT" or "TRY AGAIN",
 	indicating if you were able to guess the correct answer. You're always welcome to try as many times as you would like.<br> To get a new set of numbers for a new equation, hit the Refresh button and it will reset the variables in the equation and provide a new equation.</p>
 	<br>
+	<h2 class = "text-center">Basic Function</h2>
+	<br>
+	<p>The Basic Function section will talk about the things that you should know to be able to
+	effectively navigate and use ARdvark Math.</p>
+	<br>
 	<h3 class="text-center">Our Main Menu</h3>
 	<br>
 	<div class="col-md-8 offset-md-2"><img src="Pictures/menuSS.png" class="img-fluid" alt="MainMenu ScreenShot"></div>
@@ -60,6 +65,16 @@ include'header.php';
 	Other things you can find on our homepage are our <a style="color:#EAC117" href="javascript:window.open('contactInfo.html', 'Contact Information', 'width=500,height=500');">
 	Contact Information</a> and <a style="color:#EAC117" href="javascript:window.open('privacyPolicy.html', 'privacyPolicy', 'width=500,height=500');">
 	Privacy Policy</a>, which are available by clicking the "Info" button, located at the top right of the Menu screen.</p>
+	<br>
+	<h3 class="text-center">Number Pad</h3>
+	<br>
+	<p>The number pad is a standard feature in almost every equation that we provide.
+	In order to input your guess at the answer, you must touch the numbers you wish to appear in the display.
+	To submit an answer for review, just hit the Enter button, and the display will change indicate if you input the correct answer or not.</p>
+	<br>
+	<h3 class="text-center">Refresh Button</h3>
+	<p>The refresh button allows you to change the numbers inside of the equation to provide a brand new equation for you to continue to pracitce
+	the same concepts repeatedly.</p>
 	<br>
 	<h3 class="text-center">Geometry</h3>
 	<br>
