@@ -5,6 +5,7 @@ include'header.php';
 ?>
 <body>
 <div id="particles-js"></div>
+
 <div class="container">
 	<div class="row">
 		<div class="fixed noShowMobile">
@@ -24,8 +25,25 @@ include'header.php';
   <li class="nav-item">
     <a class="nav-link" href="#geo">Geometry</a>
   </li>
+
+<li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+
 </ul>
 </div>
+
 <!-- All of the information that will be stored in the navigation -->
 <div class="col" style="color:white;margin-right:0;padding-left:10%;margin-left:5%;">
 	<h3 class="text-center">Getting Started</h3>
