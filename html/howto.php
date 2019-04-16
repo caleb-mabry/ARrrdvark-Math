@@ -20,26 +20,44 @@ include'header.php';
     <a class="nav-link" href="#need_to_know">Need to Know</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#main_menu">Main Menu</a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link" href="#geo">Geometry</a>
   </li>
 
 <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
-                </ul>
-            </li>
+  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Basic Function</a>
+  <ul class="collapse list-unstyled" id="pageSubmenu">
+      <li>
+        <a href="#main_menu">Main Menu</a>
+      </li>
+      <li>
+        <a href="#">Number Pad</a>
+      </li>
+      <li>
+        <a href="#">Refresh Button</a>
+      </li>
+  </ul>
+</li>
+
+<li>
+  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math Sections</a>
+  <ul class="collapse list-unstyled" id="pageSubmenu">
+      <li>
+        <a href="#geo">Geometry</a>
+      </li>
+      <li>
+        <a href="#">Vectors</a>
+      </li>
+      <li>
+        <a href="#">Algebra</a>
+      </li>
+      <li>
+	<a href="#">Numbers</a>
+      </li>
+      <li>
+	<a href="#">Fractions</a>
+      </li>
+  </ul>
+</li>
 
 </ul>
 </div>
@@ -64,42 +82,84 @@ include'header.php';
 	<h3 class="text-center">What You Should Know</h3>
 	<p>ARdvark Math can aid any student to study general math concepts in a fun and engaging way with augmented reality. There are 5 categories that you can test your knowledge in, each category having 3 different difficulties.
 	With 15 different randomly generated equations to test your knowledge, there are plenty of concepts to practice. The 5 categories that are currently available
-	to be practiced are: Vectors, Numbers(General Arithmetic), Algebra, Fractions, Geometry. There are Image Targets for each of these categories, including the numgers 0-9, arithemtic operators, and a "Dropdown Equation" Image Target. When you select your difficulty in the main menu, your camera will appear with our overlay. To practice a specific
+	to be practiced are: Vectors, Numbers(General Arithmetic), Algebra, Fractions, Geometry. There are Image Targets for each of these categories, including the numbers 0-9, arithemtic operators, and a <a style="color:#EAC117" href="#"> "Drowdown Equation" </a> Image Target. 
+	When you select your difficulty in the main menu, your camera will appear with our overlay. To practice a specific
 	category, you must place the corresponding Image Target in front of the camera for ARdvark Math to superimpose a practice problem overtop the Image Target. For example,
 	if someone were to practice their algebra skills, they would simply need to place select "Algebra" from the dropdown menu and put the Algebra Image Target in front of the camera, like so (Show Screenshot of this).
 	To try and solve the equation, you must use the numpad on the image to input your answer, then press the Enter button. The display will change to either "CORRECT" or "TRY AGAIN",
 	indicating if you were able to guess the correct answer. You're always welcome to try as many times as you would like.<br> To get a new set of numbers for a new equation, hit the Refresh button and it will reset the variables in the equation and provide a new equation.</p>
 	<br>
-	<h2 class = "text-center">Basic Function</h2>
+	<h2 id="main_menu" class = "text-center">Basic Function</h2>
 	<br>
-	<p>The Basic Function section will talk about the things that you should know to be able to
+	<p class="text-center">The Basic Function section will talk about the things that you should know to be able to
 	effectively navigate and use ARdvark Math.</p>
 	<br>
 	<h3 class="text-center">Our Main Menu</h3>
 	<br>
 	<div class="col-md-8 offset-md-2"><img src="Pictures/menuSS.png" class="img-fluid" alt="MainMenu ScreenShot"></div>
 	<br>
-	<p id="geo">Our main menu will allow you to navigate to the different difficulties of each category, and the Number's Sandbox(more about <font color="blue"> Number's Sandbox</font>).
+	<p>Our main menu will allow you to navigate to the different difficulties of each category, and the Number's Sandbox(more about <font color="blue"> Number's Sandbox</font>).
 	Other things you can find on our homepage are our <a style="color:#EAC117" href="javascript:window.open('contactInfo.html', 'Contact Information', 'width=500,height=500');">
 	Contact Information</a> and <a style="color:#EAC117" href="javascript:window.open('privacyPolicy.html', 'privacyPolicy', 'width=500,height=500');">
 	Privacy Policy</a>, which are available by clicking the "Info" button, located at the top right of the Menu screen.</p>
 	<br>
 	<h3 class="text-center">Number Pad</h3>
 	<br>
+	<p class="text-center">[pic here]</p>
+	<br>
 	<p>The number pad is a standard feature in almost every equation that we provide.
 	In order to input your guess at the answer, you must touch the numbers you wish to appear in the display.
 	To submit an answer for review, just hit the Enter button, and the display will change indicate if you input the correct answer or not.</p>
 	<br>
 	<h3 class="text-center">Refresh Button</h3>
+	<br>
+        <p class="text-center">[pic here]</p>
+        <br>
 	<p>The refresh button allows you to change the numbers inside of the equation to provide a brand new equation for you to continue to pracitce
 	the same concepts repeatedly.</p>
+	<br>
+	<h2 id="geo" class="text-center">Math Sections</h2>
+	<br>
+	<p class="text-center">These are the different math sections that are available to be practiced with ARdvark Math.</p>
 	<br>
 	<h3 class="text-center">Geometry</h3>
 	<br>
 	<div class="col-md-8 offset-md-2"><img src="Pictures/InterGeoSS.png" class="img-fluid" alt="InterGeometry ScreenShot"></div>
 	<br>
 	<p>The geometry category will test your ability to substitue values into a formula and manipulate variables. Under the easy difficulty, you can practice finding the angle to a triangle.
-	You will have to find the volume of a sphere the surface area to a section of a cylinder in the intermediate and hard difficulties of the geometry category, respectively.</p>
+	You will have to find the volume of a sphere the surface area to a section of a cylinder in the intermediate and hard difficulties of the geometry category, respectively.
+	<br>Learn about <a style="color:#EAC117" href="https://www.mathsisfun.com/geometry/index.html" target="_blank">Geometry</a>!</p>
+	<br>
+	<h3 class="text-center">Vectors</h3>
+	<br>
+        <p class="text-center">[pic here]</p>
+        <br>
+	<p>Our Vectors section will introduce basic vector operations. For example, dot products, vector addition/subtraction and vector multiplication.
+	<br>Learn about <a style="color:#EAC117" href="https://www.mathsisfun.com/algebra/vectors.html" target="_blank">Vectors</a>!</p>
+	<br>
+	<h3 class="text-center">Algebra</h3>
+        <br>
+        <p class="text-center">[pic here]</p>
+        <br>
+        <p>The algebra equations are a good introduction to solving for x and working with decimal and fractions.
+        <br>
+	Learn about <a style="color:#EAC117" href="https://www.mathsisfun.com/algebra/index.html" target="_blank">Algebra</a>!</p>
+        <br>
+	<h3 class="text-center">Numbers</h3>
+        <br>
+        <p class="text-center">[pic here]</p>
+        <br>
+	<p>The numbers category is perfect for mastering basic operations, such as: addition, subtraction, multiplication and division</p>
+        <br>
+	Learn about <a style="color:#EAC117" href="https://www.mathsisfun.com/numbers/index.html" target="_blank">Numbers</a>!</p>
+        <br>
+	<h3 class="text-center">Fractions</h3>
+        <br>
+        <p class="text-center">[pic here]</p>
+        <br>
+	<p>This category provides varying difficulties of fraction problems. In its most basic form, you can practice adding and subtracting fractions.</p>
+        <br>Learn about <a style="color:#EAC117" href="https://www.mathsisfun.com/fractions-menu.html" target="_blank">Fractions</a>!</p>
+        <br>
 </div>
 
 
